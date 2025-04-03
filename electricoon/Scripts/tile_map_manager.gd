@@ -7,7 +7,6 @@ extends Node2D
 
 func get_mouse_grid_position() -> Vector2i:
 	return overlay.local_to_map(get_global_mouse_position())
-
 func _process(delta: float) -> void:
 	pass
 
@@ -18,3 +17,4 @@ func reset_overlay() -> void:
 func draw_selection() -> void:
 	reset_overlay()
 	overlay.set_cell(get_mouse_grid_position(), 0, Vector2i(0, 1))
+	print(overlay.local_to_map(get_global_mouse_position()))

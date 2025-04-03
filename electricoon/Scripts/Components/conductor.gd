@@ -43,4 +43,22 @@ func update_connections(new_connections: Array[bool]) -> Vector2i:
 	elif not connections[0] and not connections[1] and connections[2] and connections[3]:
 		offset.x += 10
 	
+	# ENDS
+	# North East
+	elif not connections[0] and not connections[1] and not connections[2] and connections[3]:
+		offset.x += 11
+	# South East
+	elif connections[0] and not connections[1] and not connections[2] and not connections[3]:
+		offset.x += 12
+	# South West
+	elif not connections[0] and connections[1] and not connections[2] and not connections[3]:
+		offset.x += 13
+	# North West
+	elif not connections[0] and not connections[1] and connections[2] and not connections[3]:
+		offset.x += 14
+	
+	# ALL
+	elif connections[0] and connections[1] and connections[2] and connections[3]:
+		offset.x += 15
+	
 	return sprite_atlas_coord + offset

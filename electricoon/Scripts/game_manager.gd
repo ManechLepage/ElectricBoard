@@ -4,6 +4,7 @@ extends Node
 @export var components: Array[Component]
 
 signal place_component_request(component: Component, position: Vector2i)
+signal grid_changed
 
 enum SelectionType {
 	DEFAULT

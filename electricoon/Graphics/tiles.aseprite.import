@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4cifo11ry6g3"
-path="res://.godot/imported/tiles.aseprite-c702bdf1316ec579e4724d3306349021.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://Graphics/tiles.aseprite"
-dest_files=["res://.godot/imported/tiles.aseprite-c702bdf1316ec579e4724d3306349021.ctex"]
 
 [params]
 

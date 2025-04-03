@@ -18,3 +18,4 @@ func draw_selection() -> void:
 	reset_overlay()
 	overlay.set_cell(get_mouse_grid_position(), 0, Vector2i(0, 1))
 	print(overlay.local_to_map(get_global_mouse_position()))
+# les coordinates c +1 -1 verticalement et horizontalement

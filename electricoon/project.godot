@@ -11,7 +11,17 @@ config_version=5
 [application]
 
 config/name="Electricoon"
+config/tags=PackedStringArray("2d", "game", "pixel_art", "puzzle")
+run/main_scene="uid://c5urw2axvh48g"
 config/features=PackedStringArray("4.4", "Forward Plus")
+
+[aseprite_importers]
+
+aseprite_executable_path="C:/Program Files (x86)/Steam/steamapps/common/Aseprite/Aseprite.exe"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/nklbdev.aseprite_importers/plugin.cfg")
 
 [file_customization]
 
@@ -23,3 +33,7 @@ folder_colors={
 "res://Scenes/": "teal",
 "res://Scripts/": "blue"
 }
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.0646965, 0.0646966, 0.0646965, 1)

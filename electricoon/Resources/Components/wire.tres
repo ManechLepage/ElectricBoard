@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Conductor" load_steps=2 format=3 uid="uid://ccyj1j8ay0683"]
+
+[ext_resource type="Script" uid="uid://cj22jcm657iq5" path="res://Scripts/Components/conductor.gd" id="1_6lqtd"]
+
+[resource]
+script = ExtResource("1_6lqtd")
+connections = Array[int]([])
+sprites = Array[Texture]([])
+name = &"Wire"
+price = 5
+metadata/_custom_type_script = "uid://cj22jcm657iq5"

@@ -6,7 +6,7 @@
 [node name="Main" type="Node2D"]
 texture_filter = 1
 
-[node name="TileMap" type="Node2D" parent="."]
+[node name="TileMap" type="Node2D" parent="." groups=["Grid"]]
 script = ExtResource("1_jjgbg")
 
 [node name="Base" type="TileMapLayer" parent="TileMap"]
@@ -15,8 +15,10 @@ tile_map_data = PackedByteArray("AAD/////AAAAAAAAAAD///7/AAAAAAAAAAD+////AAAAAAA
 tile_set = ExtResource("2_bo1nx")
 
 [node name="Components" type="TileMapLayer" parent="TileMap"]
+tile_set = ExtResource("2_bo1nx")
 
 [node name="Overlay" type="TileMapLayer" parent="TileMap"]
+tile_set = ExtResource("2_bo1nx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)

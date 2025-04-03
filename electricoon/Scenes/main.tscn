@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=4 uid="uid://c5urw2axvh48g"]
+[gd_scene load_steps=5 format=4 uid="uid://c5urw2axvh48g"]
 
 [ext_resource type="Script" uid="uid://cemcu7sqkm7mi" path="res://Scripts/tile_map_manager.gd" id="1_jjgbg"]
 [ext_resource type="TileSet" uid="uid://dhthbtsg5y2ef" path="res://Graphics/Grid/main.tres" id="2_bo1nx"]
 [ext_resource type="Script" uid="uid://b41xpuwojlfo0" path="res://Scenes/camera_2d.gd" id="3_8gbba"]
+
+[sub_resource type="Environment" id="Environment_8gbba"]
+glow_enabled = true
+glow_intensity = 2.0
+fog_density = 0.0
 
 [node name="Main" type="Node2D"]
 texture_filter = 1
@@ -18,9 +23,16 @@ tile_set = ExtResource("2_bo1nx")
 [node name="Components" type="TileMapLayer" parent="TileMap"]
 tile_set = ExtResource("2_bo1nx")
 
+[node name="ComponentOverlay" type="TileMapLayer" parent="TileMap"]
+self_modulate = Color(1, 1, 1, 0.588235)
+tile_set = ExtResource("2_bo1nx")
+
 [node name="Overlay" type="TileMapLayer" parent="TileMap"]
 tile_set = ExtResource("2_bo1nx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
 script = ExtResource("3_8gbba")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_8gbba")

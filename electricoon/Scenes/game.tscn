@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://yhlguoy7d5e5"]
+[gd_scene load_steps=5 format=3 uid="uid://yhlguoy7d5e5"]
 
 [ext_resource type="Script" uid="uid://baklgq5hsc2q1" path="res://Scripts/game_manager.gd" id="1_ebmjs"]
+[ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="2_3dryh"]
+[ext_resource type="Resource" uid="uid://bhvi18hsuobjr" path="res://Resources/Components/battery.tres" id="3_wowpa"]
+[ext_resource type="Resource" uid="uid://ccyj1j8ay0683" path="res://Resources/Components/wire.tres" id="4_i6g32"]
 
 [node name="Node" type="Node"]
 script = ExtResource("1_ebmjs")
+components = Array[ExtResource("2_3dryh")]([ExtResource("3_wowpa"), ExtResource("4_i6g32")])

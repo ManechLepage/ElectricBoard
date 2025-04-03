@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c5urw2axvh48g"]
+
+[node name="Main" type="Node2D"]
+
+[node name="TileMap" type="Node2D" parent="."]
+
+[node name="Base" type="TileMapLayer" parent="TileMap"]
+
+[node name="Components" type="TileMapLayer" parent="TileMap"]
+
+[node name="Overlay" type="TileMapLayer" parent="TileMap"]

@@ -20,5 +20,6 @@ folder_colors={
 "res://Audio/": "orange",
 "res://Graphics/": "yellow",
 "res://Resources/": "green",
-"res://Scripts/": "teal"
+"res://Scenes/": "teal",
+"res://Scripts/": "blue"
 }

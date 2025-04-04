@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://dybwpq4lal6sj"]
+[gd_scene load_steps=2 format=3 uid="uid://dybwpq4lal6sj"]
+
+[ext_resource type="PackedScene" uid="uid://5iv1qn41gnq7" path="res://Scenes/ui/hotbar_button.tscn" id="1_oy4sx"]
 
 [node name="hotbar" type="Node2D"]
 
@@ -12,6 +14,13 @@ current_tab = 0
 [node name="Wires" type="TabBar" parent="TabContainer"]
 layout_mode = 2
 metadata/_tab_index = 0
+
+[node name="Control" parent="TabContainer/Wires" instance=ExtResource("1_oy4sx")]
+layout_mode = 1
+offset_left = 4.0
+offset_top = 2.0
+offset_right = -973.0
+offset_bottom = -5.0
 
 [node name="Source" type="TabBar" parent="TabContainer"]
 visible = false

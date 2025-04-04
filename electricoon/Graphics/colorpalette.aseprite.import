@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://c5i763si75776"
+path="res://.godot/imported/colorpalette.aseprite-e5e05b8eb3004973a143eb41a90a9bec.res"
+
+[deps]
+
+source_file="res://Graphics/colorpalette.aseprite"
+dest_files=["res://.godot/imported/colorpalette.aseprite-e5e05b8eb3004973a143eb41a90a9bec.res"]
+
+[params]
+

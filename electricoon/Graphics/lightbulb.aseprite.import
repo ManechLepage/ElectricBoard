@@ -2,12 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bngpsx3qmtk5q"
+uid="uid://orr57x6lhire"
 valid=false
 
 [deps]
 
-source_file="res://Graphics/toggle_switch.aseprite"
+source_file="res://Graphics/lightbulb.aseprite"
 
 [params]
 

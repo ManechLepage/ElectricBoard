@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cemcu7sqkm7mi" path="res://Scripts/tile_map_manager.gd" id="1_jjgbg"]
 [ext_resource type="TileSet" uid="uid://dhthbtsg5y2ef" path="res://Graphics/Grid/main.tres" id="2_bo1nx"]
-[ext_resource type="Script" uid="uid://b41xpuwojlfo0" path="res://Scenes/camera_2d.gd" id="3_8gbba"]
+[ext_resource type="Script" path="res://Scenes/camera_2d.gd" id="3_8gbba"]
 
 [sub_resource type="Environment" id="Environment_8gbba"]
 glow_enabled = true

@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://5iv1qn41gnq7"]
+
+[ext_resource type="Texture2D" uid="uid://8q7jvol3da2m" path="res://Graphics/button.aseprite" id="1_0b5m0"]
+
+[node name="Control" type="Button"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1072.0
+offset_bottom = -568.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(53, 27)
+scale = Vector2(1.48, 1.48)
+texture = ExtResource("1_0b5m0")
+
+[node name="name" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="cost" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="hotkey" type="Label" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 46.0
+offset_bottom = 25.0

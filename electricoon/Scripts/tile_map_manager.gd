@@ -11,6 +11,7 @@ var components: Array[Component]
 func _ready() -> void:
 	Game.place_component_request.connect(handle_component_request)
 	Game.grid_changed.connect(update_component_grid)
+	Game.erase_component.connect(erase_component)
 
 func get_mouse_grid_position() -> Vector2i:
 	return overlay.local_to_map(get_global_mouse_position())
@@ -37,6 +38,10 @@ func draw_component(component: Component, pos: Vector2i) -> void:
 	components.append(added_component)
 	Game.grid_changed.emit()
 
+func erase_component(pos: Vector2i) -> void:
+	components.erase(get_component_from_position(pos))
+	components_grid.erase_cell(pos)
+	Game.grid_changed.emit()
 
 func draw_overlay_component(component: Component, pos: Vector2i) -> void:
 	component_overlay.set_cell(pos, 0, component.sprite_atlas_coord)
@@ -76,5 +81,4 @@ func get_connections(pos: Vector2i) -> Array[bool]:
 				connections.append(false)
 		else:
 			connections.append(false)
-	
 	return connections

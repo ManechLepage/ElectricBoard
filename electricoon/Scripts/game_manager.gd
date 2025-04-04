@@ -20,7 +20,8 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if selection_type == SelectionType.DEFAULT:
-		grid_manager.draw_selection()
+		if grid_manager:
+			grid_manager.draw_selection()
 
 func get_component_by_name(name: StringName) -> Component:
 	for component in components:

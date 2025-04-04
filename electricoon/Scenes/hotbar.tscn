@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dybwpq4lal6sj"]
+
+[node name="hotbar" type="Node2D"]
+
+[node name="TabBar" type="TabBar" parent="."]
+modulate = Color(0.851769, 0.851769, 0.851769, 1)
+offset_left = 35.0
+offset_top = 488.0
+offset_right = 1095.0
+offset_bottom = 625.0

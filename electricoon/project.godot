@@ -17,7 +17,7 @@ config/features=PackedStringArray("4.4", "Forward Plus")
 
 [aseprite_importers]
 
-aseprite_executable_path="C:\\Users\\pc\\Desktop\\Aseprite.v1.3.7"
+aseprite_executable_path="C:\\Program Files (x86)\\Steam\\steamapps\\common\\Aseprite\\Aseprite.exe"
 
 [autoload]
 

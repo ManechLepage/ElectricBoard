@@ -3,6 +3,8 @@ extends Component
 
 @export var connections: Array[bool] = [false, false, false, false] #Up-Left-Down-Right
 
+@export var current: float
+
 func update_connections(new_connections: Array[bool]) -> Vector2i:
 	connections = new_connections
 	var offset: Vector2i = Vector2i.ZERO

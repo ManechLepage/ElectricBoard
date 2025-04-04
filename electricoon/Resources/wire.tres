@@ -6,7 +6,8 @@
 script = ExtResource("1_6lqtd")
 connections = Array[bool]([])
 name = &"Wire"
-hotkey = 1
+hotkey = 0
+tab_num = 0
 price = 5
 sprite_atlas_coord = Vector2i(0, 2)
 metadata/_custom_type_script = "uid://cj22jcm657iq5"

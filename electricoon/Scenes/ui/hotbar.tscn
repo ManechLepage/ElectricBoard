@@ -52,15 +52,6 @@ layout_mode = 0
 offset_right = 1061.0
 offset_bottom = 86.0
 
-[node name="T   Delete" type="TabBar" parent="TabContainer"]
-visible = false
-layout_mode = 2
-metadata/_tab_index = 4
-
-[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/T   Delete"]
-offset_right = 1061.0
-offset_bottom = 86.0
-
 [node name="Circle" type="Sprite2D" parent="."]
 position = Vector2(60, 505)
 scale = Vector2(0.7, 0.7)
@@ -78,10 +69,5 @@ texture = ExtResource("2_r1m07")
 
 [node name="Circle4" type="Sprite2D" parent="."]
 position = Vector2(347.6, 503.6)
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("2_r1m07")
-
-[node name="Circle5" type="Sprite2D" parent="."]
-position = Vector2(454.6, 503.6)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_r1m07")

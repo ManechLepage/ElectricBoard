@@ -11,12 +11,8 @@ var component: Component
 func load_component(_component: Component) -> void:
 	component = _component
 	comp_sprite.texture = component.sprite
-	if component.price == 0 and component.hotkey == 0:
-		cost_l.text = str(component.price)
-		hotkey_l.text = str(component.hotkey)
-	else:
-		cost_l.text = ""
-		hotkey_l.text = ""
+	cost_l.text = str(component.price)
+	hotkey_l.text = str(component.hotkey)
 
 func _ready() -> void:
 	pass
@@ -31,9 +27,8 @@ func _input(event: InputEvent) -> void:
 		
 func _get_component_with_hotkey(wanted_hotkey):
 	var list_components = []
-	for i in range(5):
+	for i in range(4):
 		for component in Game.components:
 			if component.hotkey == wanted_hotkey:
 				list_components.append(component)
-				print(component.hotkey)
 	return(list_components)

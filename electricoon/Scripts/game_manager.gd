@@ -6,6 +6,7 @@ var money_spent = 0
 signal place_component_request(component: Component, position: Vector2i)
 signal erase_component(position: Vector2i)
 signal grid_changed
+signal short_circuit
 
 enum SelectionType {
 	DEFAULT

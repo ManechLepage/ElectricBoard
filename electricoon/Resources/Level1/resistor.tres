@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Component" load_steps=3 format=3 uid="uid://ckrgt4qpq52qa"]
+
+[ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="1_2o8sy"]
+[ext_resource type="Texture2D" uid="uid://dpfnnsi3r8542" path="res://Graphics/resistor.aseprite" id="2_mmcmi"]
+
+[resource]
+script = ExtResource("1_2o8sy")
+name = &""
+hotkey = 2
+tab_num = 2
+price = 20
+sprite_atlas_coord = Vector2i(0, 10)
+description = ""
+sprite = ExtResource("2_mmcmi")
+metadata/_custom_type_script = "uid://c4s8mkbc2qmbp"

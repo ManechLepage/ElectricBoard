@@ -5,5 +5,5 @@ extends Conductor
 
 var is_activated: bool
 
-@export var can_breal: bool = false
+@export var can_break: bool = false
 @export var broken_limit: int

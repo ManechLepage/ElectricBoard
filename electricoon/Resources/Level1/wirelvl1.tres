@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Conductor" load_steps=4 format=3 uid="uid://b1lor4s6n7p1x"]
+
+[ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="1_3oevy"]
+[ext_resource type="Script" uid="uid://cj22jcm657iq5" path="res://Scripts/Components/conductor.gd" id="2_i85en"]
+[ext_resource type="Texture2D" uid="uid://dmacu7tmkysug" path="res://Graphics/wire_sprite.aseprite" id="3_aqaqr"]
+
+[resource]
+script = ExtResource("2_i85en")
+connections = Array[bool]([])
+resistance = 0.0
+connected_conductors = Array[ExtResource("1_3oevy")]([])
+name = &"Wire"
+hotkey = 1
+tab_num = 0
+price = 5
+sprite_atlas_coord = Vector2i(0, 2)
+description = "This is a wire. It lets you connect components to sources of energy. 
+You can connect multiple together increasing its utility… 
+But at what cost?
+"
+sprite = ExtResource("3_aqaqr")
+metadata/_custom_type_script = "uid://cj22jcm657iq5"

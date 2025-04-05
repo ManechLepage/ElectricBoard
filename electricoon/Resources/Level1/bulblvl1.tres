@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Consumer" load_steps=3 format=3 uid="uid://vqionus7g65i"]
+
+[ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="1_0om21"]
+[ext_resource type="Script" uid="uid://dnet58r4xungu" path="res://Scripts/Components/consumer.gd" id="2_31t12"]
+
+[resource]
+script = ExtResource("2_31t12")
+volts = 5.0
+can_break = true
+broken_limit = 15
+connections = Array[bool]([false, false, false, false])
+resistance = 10.0
+connected_conductors = Array[ExtResource("1_0om21")]([])
+name = &"Bulb"
+hotkey = 1
+tab_num = 2
+price = 20
+sprite_atlas_coord = Vector2i(4, 16)
+description = ""
+metadata/_custom_type_script = "uid://dnet58r4xungu"

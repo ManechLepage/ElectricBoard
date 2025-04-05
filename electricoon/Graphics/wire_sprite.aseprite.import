@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bngpsx3qmtk5q"
-path="res://.godot/imported/toggle_switch.aseprite-f6af70157a8b21707578b93a353c263e.ctex"
+uid="uid://dmacu7tmkysug"
+path="res://.godot/imported/wire_sprite.aseprite-eaf30324b6d608b2fcc1ff18f17f0415.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/toggle_switch.aseprite"
-dest_files=["res://.godot/imported/toggle_switch.aseprite-f6af70157a8b21707578b93a353c263e.ctex"]
+source_file="res://Graphics/wire_sprite.aseprite"
+dest_files=["res://.godot/imported/wire_sprite.aseprite-eaf30324b6d608b2fcc1ff18f17f0415.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dh1lux8yog6up"
-path="res://.godot/imported/transistor.aseprite-97ea643dbb1b2e53c9b32ead2d02b474.ctex"
+uid="uid://c1pegrnybwvgx"
+path="res://.godot/imported/battery_sprite.aseprite-ca22a51fb4be9134af9c6c31226f0c97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/transistor.aseprite"
-dest_files=["res://.godot/imported/transistor.aseprite-97ea643dbb1b2e53c9b32ead2d02b474.ctex"]
+source_file="res://Graphics/battery_sprite.aseprite"
+dest_files=["res://.godot/imported/battery_sprite.aseprite-ca22a51fb4be9134af9c6c31226f0c97.ctex"]
 
 [params]
 

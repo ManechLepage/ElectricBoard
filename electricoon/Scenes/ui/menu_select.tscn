@@ -1,14 +1,16 @@
-[gd_scene load_steps=16 format=3 uid="uid://cb0bjjsx1k7yg"]
+[gd_scene load_steps=18 format=3 uid="uid://cb0bjjsx1k7yg"]
 
 [ext_resource type="Script" uid="uid://buehm7botpuif" path="res://Scenes/ui/menu_select.gd" id="1_wr8qp"]
 [ext_resource type="PackedScene" uid="uid://b4vs8vj5si25" path="res://Scenes/ui/level.tscn" id="2_5afff"]
 [ext_resource type="Texture2D" uid="uid://4y43ncoakv8x" path="res://Graphics/menu_line.aseprite" id="3_5afff"]
 [ext_resource type="PackedScene" uid="uid://dlv1ygmgrmj6i" path="res://Scenes/levels/level1.tscn" id="4_ycqns"]
 [ext_resource type="Texture2D" uid="uid://ckepdmry8a5ig" path="res://Graphics/ui/play_button_hov.aseprite" id="5_5n2i0"]
-[ext_resource type="PackedScene" uid="uid://bq055ta2pcnk2" path="res://Scenes/ui/level_1.tscn" id="5_16ctq"]
 [ext_resource type="PackedScene" uid="uid://d3qwq8scmmd4r" path="res://Scenes/levels/level2.tscn" id="5_ycqns"]
 [ext_resource type="Texture2D" uid="uid://cirgyfkregu3a" path="res://Graphics/ui/play_button_norm.aseprite" id="6_16ctq"]
+[ext_resource type="PackedScene" uid="uid://dismyykx2wxvv" path="res://Scenes/levels/level3.tscn" id="6_fvbv4"]
 [ext_resource type="Texture2D" uid="uid://cpl7f4sltlg2n" path="res://Graphics/ui/play_button _pre.aseprite" id="7_eiikv"]
+[ext_resource type="PackedScene" uid="uid://cj1am5plluydp" path="res://Scenes/levels/level4.tscn" id="7_vachq"]
+[ext_resource type="PackedScene" uid="uid://ccio50g0wbmsd" path="res://Scenes/levels/level5.tscn" id="8_vachq"]
 [ext_resource type="Texture2D" uid="uid://c5v8d3jdhbjco" path="res://Graphics/logo.aseprite" id="10_ycqns"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5n2i0"]
@@ -71,7 +73,7 @@ offset_top = 1232.0
 offset_right = 650.0
 offset_bottom = 1352.0
 text = "3"
-level_path = ExtResource("5_16ctq")
+level_path = ExtResource("6_fvbv4")
 
 [node name="level4" parent="." instance=ExtResource("2_5afff")]
 layout_mode = 0
@@ -80,7 +82,7 @@ offset_top = 1231.0
 offset_right = 864.0
 offset_bottom = 1351.0
 text = "4"
-level_path = ExtResource("5_16ctq")
+level_path = ExtResource("7_vachq")
 
 [node name="level5" parent="." instance=ExtResource("2_5afff")]
 layout_mode = 0
@@ -89,7 +91,7 @@ offset_top = 1234.0
 offset_right = 1054.0
 offset_bottom = 1354.0
 text = "5"
-level_path = ExtResource("5_16ctq")
+level_path = ExtResource("8_vachq")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 327)

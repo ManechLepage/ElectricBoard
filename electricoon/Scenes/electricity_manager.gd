@@ -168,7 +168,8 @@ func get_total_resistance(conductors: Array[Conductor]) -> float:
 	return total_resistance
 
 func footjob():
-	var somme = 0
-	for conductor: Conductor in Game.grid_manager.components:
-		somme += conductor.Resistance
-	Label.text = (somme) + "kg"
+	if Game.is_grille:
+		var somme = 0
+		for conductor: Conductor in Game.grid_manager.components:
+			somme += conductor.Resistance
+		Label.text = str(somme) + "kg"

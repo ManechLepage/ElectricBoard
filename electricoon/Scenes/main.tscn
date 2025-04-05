@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://c5urw2axvh48g"]
+[gd_scene load_steps=18 format=4 uid="uid://c5urw2axvh48g"]
 
 [ext_resource type="Script" uid="uid://cemcu7sqkm7mi" path="res://Scripts/tile_map_manager.gd" id="1_jjgbg"]
 [ext_resource type="Script" uid="uid://by5lf0t8ol570" path="res://Scenes/main.gd" id="1_jjvhh"]
@@ -13,8 +13,9 @@
 [ext_resource type="Theme" uid="uid://dhd8uh8sr0fcm" path="res://Scenes/ui/start_button.tres" id="8_344ge"]
 [ext_resource type="Script" uid="uid://f80r5bd1130k" path="res://Scenes/camera_2d.gd" id="8_d1ilt"]
 [ext_resource type="Resource" uid="uid://c0mcntr0w7qim" path="res://Resources/Level1/resistor.tres" id="8_k12tt"]
-[ext_resource type="PackedScene" uid="uid://c2uq1687o00b" path="res://Scenes/ui/info_panel.tscn" id="10_6iyac"]
+[ext_resource type="PackedScene" path="res://Scenes/ui/info_panel.tscn" id="10_6iyac"]
 [ext_resource type="Texture2D" uid="uid://dk57hgdsfw7xt" path="res://Graphics/ui/short_circuit.aseprite" id="11_d1ilt"]
+[ext_resource type="Texture2D" uid="uid://3etfln1i11c7" path="res://Graphics/carbon_footprint.aseprite" id="16_k12tt"]
 
 [sub_resource type="Environment" id="Environment_8gbba"]
 glow_enabled = true
@@ -85,6 +86,39 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="CarbonFootprint" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.06
+anchor_top = 0.054
+anchor_right = 0.06
+anchor_bottom = 0.054
+offset_left = 924.88
+offset_top = -40.992
+offset_right = 977.88
+offset_bottom = 12.008
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.28125, 1.28125)
+size_flags_horizontal = 6
+size_flags_vertical = 6
+texture = ExtResource("16_k12tt")
+metadata/_edit_group_ = true
+
+[node name="foot" type="Label" parent="CanvasLayer"]
+unique_name_in_owner = true
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -215.0
+offset_top = 14.0
+offset_right = -149.0
+offset_bottom = 49.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 25
+text = "0 kg"
+horizontal_alignment = 2
+metadata/_edit_group_ = true
 
 [node name="Label" type="Label" parent="CanvasLayer"]
 unique_name_in_owner = true

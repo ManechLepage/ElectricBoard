@@ -53,3 +53,4 @@ func _on_grid_changed() -> void:
 		money_spent = 0
 		for component in grid_manager.components:
 			money_spent += component.price
+		grid_manager.footjob()

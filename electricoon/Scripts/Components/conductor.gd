@@ -77,14 +77,16 @@ func update_connected_components() -> void:
 		if component:
 			connected_conductors.append(component)
 
-func conduct_current(previous_components: Array[Array], p: Conductor) -> Array[Array]:
+func conduct_current(previous_components: Array[Conductor], p: Conductor):
+	previous_components.append(self)
+	print(position, connected_conductors.size() - 1)
 	for conductor: Conductor in connected_conductors:
+		print("*", position, "*")
 		if conductor != p:
-			for i in previous_components:
-				if conductor not in previous_components:
-					previous_components[-1].append(self)
-					return conduct_current(previous_components, self)
-	if self is Source:
-		return previous_components
-	previous_components.remove_at(-1)
-	return []
+			if conductor in previous_components:
+				previous_components.append(conductor)
+				Game.electricity_manager.paths.append(previous_components.duplicate(true))
+			else:
+				conductor.conduct_current(previous_components, self)
+	
+		#Game.electricity_manager.finished.emit()

@@ -59,9 +59,15 @@ func dfs(current_conductor: Conductor) -> void:
 			path_copy.append(source)
 			paths.append(path_copy)
 		elif not visited_paths.has(neighbor):
-			current_path.append(neighbor)
-			dfs(neighbor)
-			current_path.pop_back()
+			if neighbor is Stopper:
+				if not neighbor.is_stopped:
+					current_path.append(neighbor)
+					dfs(neighbor)
+					current_path.pop_back()
+			else:
+				current_path.append(neighbor)
+				dfs(neighbor)
+				current_path.pop_back()
 
 	if current_conductor != source:
 		visited_paths.erase(current_conductor)

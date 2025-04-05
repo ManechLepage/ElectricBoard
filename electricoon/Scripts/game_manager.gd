@@ -3,9 +3,12 @@ extends Node
 
 var components: Array[Component]
 var money_spent = 0
+
+signal short_circuit
 signal place_component_request(component: Component, position: Vector2i)
 signal erase_component(position: Vector2i)
 signal grid_changed
+signal handle_hover
 
 enum SelectionType {
 	DEFAULT
@@ -33,6 +36,7 @@ func get_component_by_name(name: StringName) -> Component:
 	return null
 
 func _input(event: InputEvent) -> void:
+	handle_hover.emit()
 	if Input.is_action_just_pressed("LeftClick"):
 		if current_selected_component:
 			place_component_request.emit(current_selected_component, grid_manager.get_mouse_grid_position())

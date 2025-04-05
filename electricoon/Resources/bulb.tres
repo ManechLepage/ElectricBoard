@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="Consumer" load_steps=3 format=3 uid="uid://b2ggilln17t2c"]
+[gd_resource type="Resource" script_class="Consumer" load_steps=4 format=3 uid="uid://b2ggilln17t2c"]
 
 [ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="1_l5dd0"]
 [ext_resource type="Script" uid="uid://dnet58r4xungu" path="res://Scripts/Components/consumer.gd" id="2_qqyck"]
+[ext_resource type="Texture2D" uid="uid://c2mcd2oc23uk7" path="res://Graphics/ui/bulb_sprite.aseprite" id="3_qqyck"]
 
 [resource]
 script = ExtResource("2_qqyck")
@@ -17,4 +18,5 @@ tab_num = 2
 price = 20
 sprite_atlas_coord = Vector2i(16, 2)
 description = ""
+sprite = ExtResource("3_qqyck")
 metadata/_custom_type_script = "uid://dnet58r4xungu"

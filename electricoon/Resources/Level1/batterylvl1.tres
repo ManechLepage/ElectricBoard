@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="1_f7ubm"]
 [ext_resource type="Script" uid="uid://gxspmwtxx3ij" path="res://Scripts/Components/source.gd" id="2_8vav7"]
-[ext_resource type="Texture2D" uid="uid://c1pegrnybwvgx" path="res://Graphics/battery_sprite.aseprite" id="3_5lew5"]
+[ext_resource type="Texture2D" uid="uid://bpk7rcsc3m6xo" path="res://Graphics/batterie.aseprite" id="3_cqb60"]
 
 [resource]
 script = ExtResource("2_8vav7")
@@ -17,5 +17,5 @@ tab_num = 1
 price = 10
 sprite_atlas_coord = Vector2i(0, 9)
 description = ""
-sprite = ExtResource("3_5lew5")
+sprite = ExtResource("3_cqb60")
 metadata/_custom_type_script = "uid://gxspmwtxx3ij"

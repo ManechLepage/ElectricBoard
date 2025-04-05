@@ -72,4 +72,6 @@ func update_connections(new_connections: Array[bool]) -> Vector2i:
 func update_connected_components() -> void:
 	connected_conductors.clear()
 	for tile in Game.grid_manager.components_grid.get_surrounding_cells(position):
-		pass
+		var component: Component = Game.grid_manager.get_component_from_position(tile)
+		if component:
+			connected_conductors.append(component)

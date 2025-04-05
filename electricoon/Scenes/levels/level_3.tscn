@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2jjfn8fprqyk"]
+
+[ext_resource type="Texture2D" uid="uid://cyjv8p1jmvtpl" path="res://Graphics/ui/level3_tutorial.aseprite" id="1_4rusa"]
+
+[node name="TextureRect" type="TextureRect"]
+offset_right = 1154.0
+offset_bottom = 645.0
+texture = ExtResource("1_4rusa")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 163.0
+offset_right = 1146.0
+offset_bottom = 423.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 633.0
+offset_bottom = 256.0
+text = "In this level, you are a factory worker that must keep all six lightbulbs on 
+everyday for ten years. "

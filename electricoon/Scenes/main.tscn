@@ -172,6 +172,12 @@ offset_bottom = 566.0
 scale = Vector2(4.38339, 4.38339)
 theme = ExtResource("8_344ge")
 
+[node name="CheckButton" type="CheckButton" parent="CanvasLayer"]
+offset_left = 1099.0
+offset_top = 6.0
+offset_right = 1143.0
+offset_bottom = 30.0
+
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
 anchors_preset = 5
 anchor_left = 0.5
@@ -190,3 +196,4 @@ texture = ExtResource("11_d1ilt")
 
 [connection signal="pressed" from="CanvasLayer/Control" to="." method="_on_control_pressed"]
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/CheckButton" to="." method="_on_check_button_pressed"]

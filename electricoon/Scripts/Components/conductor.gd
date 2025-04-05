@@ -5,6 +5,8 @@ extends Component
 
 @export var current: float
 
+@export var connected_conductors: Array[Component]
+
 func update_connections(new_connections: Array[bool]) -> Vector2i:
 	connections = new_connections
 	var offset: Vector2i = Vector2i.ZERO
@@ -63,4 +65,11 @@ func update_connections(new_connections: Array[bool]) -> Vector2i:
 	elif connections[0] and connections[1] and connections[2] and connections[3]:
 		offset.x += 15
 	
+	update_connected_components()
+	
 	return sprite_atlas_coord + offset
+
+func update_connected_components() -> void:
+	connected_conductors.clear()
+	for tile in Game.grid_manager.components_grid.get_surrounding_cells(position):
+		pass

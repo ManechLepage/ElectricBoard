@@ -63,6 +63,7 @@ func update_component_grid() -> void:
 	update_connections()
 
 func update_connections() -> void:
+	print("-----------------------------------------------------")
 	for component in components:
 		if component is Conductor:
 			var conductor = component as Conductor

@@ -40,6 +40,4 @@ func _input(event: InputEvent) -> void:
 			erase_component.emit(grid_manager.get_mouse_grid_position())
 		elif current_selected_component:
 			place_component_request.emit(current_selected_component, grid_manager.get_mouse_grid_position())
-	if Input.is_action_just_pressed("RightClick"):
-		erase_component.emit(grid_manager.get_mouse_grid_position())
 	

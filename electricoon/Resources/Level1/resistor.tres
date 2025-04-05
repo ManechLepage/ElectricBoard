@@ -7,7 +7,7 @@
 [resource]
 script = ExtResource("2_v1m2f")
 connections = Array[bool]([false, false, false, false])
-resistance = 0.0
+resistance = 20.0
 connected_conductors = Array[ExtResource("1_mmcmi")]([])
 name = &"Resistor"
 hotkey = 2

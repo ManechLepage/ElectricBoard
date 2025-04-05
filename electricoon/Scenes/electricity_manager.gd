@@ -1,6 +1,6 @@
 class_name ElectricityManager
 extends Node
-
+@onready var foot: Label = $foot
 signal finished
 
 var paths: Array = []
@@ -166,3 +166,9 @@ func get_total_resistance(conductors: Array[Conductor]) -> float:
 	for component: Conductor in conductors:
 		total_resistance += component.resistance
 	return total_resistance
+
+func footjob(total_resistance, time):
+	var somme = 0
+	for conductor: Conductor in Game.grid_manager.components:
+		somme += conductor.Resistance
+	Label.text = (somme) + "kg"

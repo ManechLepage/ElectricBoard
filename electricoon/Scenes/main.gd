@@ -10,12 +10,13 @@ extends Node2D
 
 @onready var button: Button = $Button
 @onready var blueprint: TextureRect = $TextureRect
+@onready var short_sprite: Sprite2D = $Sprite2D
 
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	Game.short_circuit.connect(short_circuit)
 
 func get_components():
 	return components
@@ -30,3 +31,6 @@ func _on_button_pressed() -> void:
 	hotbar.load_hotbar(components)
 	blueprint.visible = false
 	button.visible = false
+
+func short_circuit():
+	short_sprite.visible = true

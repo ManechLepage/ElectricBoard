@@ -1,15 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://5iv1qn41gnq7"]
+[gd_scene load_steps=6 format=3 uid="uid://5iv1qn41gnq7"]
 
 [ext_resource type="Script" uid="uid://bo174bmamiihp" path="res://Scripts/ui/hotbar_button.gd" id="1_hwxm4"]
 [ext_resource type="Texture2D" uid="uid://qqja0rkmpagf" path="res://Graphics/money.aseprite" id="2_wia8r"]
+[ext_resource type="Texture2D" uid="uid://gaxlwlxo1jc6" path="res://Graphics/info_button.aseprite" id="3_bmweg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bmweg"]
+
+[sub_resource type="Theme" id="Theme_gnilw"]
+Button/styles/focus = SubResource("StyleBoxEmpty_bmweg")
 
 [node name="Control" type="Button"]
 custom_minimum_size = Vector2(80, 0)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = -1072.0
-offset_bottom = -568.0
+anchors_preset = -1
+anchor_right = 0.069
+anchor_bottom = 0.123
+offset_right = 0.511993
+offset_bottom = 0.295998
 grow_horizontal = 2
 grow_vertical = 2
 flat = true
@@ -51,4 +57,36 @@ offset_bottom = 22.0
 scale = Vector2(1.655, 1.655)
 text = "1"
 
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 57.0
+offset_right = 23.0
+offset_bottom = 81.0
+theme = SubResource("Theme_gnilw")
+icon = ExtResource("3_bmweg")
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 138.0
+offset_top = -309.0
+offset_right = 947.0
+offset_bottom = -174.0
+
+[node name="Label" type="Label" parent="Panel"]
+clip_contents = true
+layout_mode = 0
+offset_left = 11.0
+offset_top = 7.0
+offset_right = 789.0
+offset_bottom = 232.0
+theme_override_font_sizes/font_size = 24
+text = "This is a wire. It lets you connect components to sources of energy. 
+You can connect multiple together increasing its utility… 
+But at what cost?
+"
+clip_text = true
+
 [connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

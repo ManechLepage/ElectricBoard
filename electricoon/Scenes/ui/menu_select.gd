@@ -17,4 +17,4 @@ func _on_button_pressed() -> void:
 	
 func go_down():
 	var tween = create_tween()
-	tween.tween_property(camera_2d, "position", Vector2(camera_2d.position.x, 1330.0), 1).set_trans(Tween.TRANS_QUAD)
+	tween.tween_property(camera_2d, "position", Vector2(camera_2d.position.x, 1200.0), 1).set_trans(Tween.TRANS_QUAD)

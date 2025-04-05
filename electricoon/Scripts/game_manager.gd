@@ -37,7 +37,3 @@ func _input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("RightClick"):
 		erase_component.emit(grid_manager.get_mouse_grid_position())
 	
-	if Input.is_action_just_pressed("Test1"):
-		current_selected_component = get_component_by_name("Wire")
-	if Input.is_action_just_pressed("Test2"):
-		current_selected_component = get_component_by_name("Battery")

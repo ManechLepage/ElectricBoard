@@ -16,14 +16,15 @@ func load_component(_component: Component) -> void:
 
 func _ready() -> void:
 	pass
-	
-	print(_get_component_with_hotkey(1))
 
 func _input(event: InputEvent) -> void:
 	for key in keys:
 		if Input.is_key_pressed(key):
-			for comp in _get_component_with_hotkey(key):
-				if comp.get_parent().get_parent().visible == true:
+			print(keys.find(key))
+			for comp in _get_component_with_hotkey(keys.find(key)):
+				print("2")
+				if button.get_parent().get_parent().visible == true:
+					print("3")
 					Game.current_selected_component = comp
 					
 		

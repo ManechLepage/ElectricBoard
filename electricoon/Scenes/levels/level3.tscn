@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://b2jjfn8fprqyk" path="res://Scenes/ui/level_3.tscn" id="8_a4sp7"]
 
 [node name="Main" instance=ExtResource("1_3qgfs")]
+budget = 200
+bulbs = 3
 
 [node name="Start" parent="CanvasLayer" index="3"]
 anchors_preset = 0

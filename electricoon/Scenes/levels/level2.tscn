@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://d0b480tfq0t0j" path="res://Scenes/ui/level_2.tscn" id="2_q0wn2"]
 
 [node name="Main" instance=ExtResource("1_e0h1l")]
+bulbs = 2
 
 [node name="Start" parent="CanvasLayer" index="3"]
 anchors_preset = 15

@@ -12,3 +12,4 @@ func update_connections(new_connections: Array[bool]) -> Vector2i:
 func click():
 	is_stopped = !is_stopped
 	Game.grid_changed.emit()
+	Game.grid_changed.emit()

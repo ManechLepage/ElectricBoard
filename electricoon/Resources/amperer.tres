@@ -1,12 +1,15 @@
-[gd_resource type="Resource" script_class="Conductor" load_steps=3 format=3 uid="uid://mactoh6crqii"]
+[gd_resource type="Resource" script_class="Conductor" load_steps=4 format=3 uid="uid://mactoh6crqii"]
 
 [ext_resource type="Script" uid="uid://cj22jcm657iq5" path="res://Scripts/Components/conductor.gd" id="1_l6f5c"]
+[ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="1_nqgsk"]
 [ext_resource type="Texture2D" uid="uid://blvyseci1khlb" path="res://Graphics/panel.aseprite" id="2_l6f5c"]
 
 [resource]
 script = ExtResource("1_l6f5c")
 connections = Array[bool]([false, false, false, false])
 current = 0.0
+resistance = 0.0
+connected_conductors = Array[ExtResource("1_nqgsk")]([])
 name = &"Tralalrero"
 hotkey = 1
 tab_num = 1

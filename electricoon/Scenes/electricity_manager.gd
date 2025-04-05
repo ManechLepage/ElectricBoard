@@ -3,4 +3,5 @@ extends Node
 
 
 func conduct(source: Source) -> void:
-	pass
+	var components: Array
+	

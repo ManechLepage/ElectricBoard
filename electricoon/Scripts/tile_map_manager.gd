@@ -83,5 +83,8 @@ func get_connections(pos: Vector2i) -> Array[bool]:
 			connections.append(false)
 	return connections
 
-func start(source: Source) -> void:
-	pass
+func get_source() -> Source:
+	for component in components:
+		if component is Source:
+			return component
+	return null

@@ -5,13 +5,14 @@
 
 [resource]
 script = ExtResource("2_qqyck")
-volts = 0.0
+volts = 5.0
 connections = Array[bool]([false, false, false, false])
-resistance = 0.0
+resistance = 10.0
 connected_conductors = Array[ExtResource("1_l5dd0")]([])
-name = &""
-hotkey = 0
-tab_num = 0
-price = 0
-sprite_atlas_coord = Vector2i(0, 0)
+name = &"Bulb"
+hotkey = 1
+tab_num = 2
+price = 20
+sprite_atlas_coord = Vector2i(4, 16)
+description = ""
 metadata/_custom_type_script = "uid://dnet58r4xungu"

@@ -22,6 +22,7 @@ fog_density = 0.0
 texture_filter = 1
 script = ExtResource("1_jjvhh")
 components = Array[ExtResource("2_21xkr")]([ExtResource("3_6bp64"), ExtResource("4_344ge"), ExtResource("5_ynf5e")])
+budget = 100
 
 [node name="TileMap" type="Node2D" parent="." groups=["Grid"]]
 script = ExtResource("1_jjgbg")

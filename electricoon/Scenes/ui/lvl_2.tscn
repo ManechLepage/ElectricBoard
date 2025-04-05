@@ -62,10 +62,6 @@ offset_bottom = 80.0
 theme = ExtResource("6_igydw")
 
 [node name="Control" parent="." instance=ExtResource("7_rc8md")]
-offset_left = -109.0
-offset_top = -53.0
-offset_right = 97.0
-offset_bottom = 52.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false

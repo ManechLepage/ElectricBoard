@@ -13,16 +13,19 @@ texture = ExtResource("1_0y0br")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 472.0
-offset_top = 125.0
-offset_right = 1109.0
-offset_bottom = 457.0
+offset_left = 382.0
+offset_top = 176.0
+offset_right = 1146.0
+offset_bottom = 483.0
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
-offset_right = 641.0
-offset_bottom = 334.0
+offset_left = 4.0
+offset_top = 6.0
+offset_right = 645.0
+offset_bottom = 340.0
 scale = Vector2(1.69, 1.69)
+theme_override_font_sizes/font_size = 32
 text = "In this level, you are operating the backup lights
  in a hospital that faces frequent blackouts.
  You must create an emergency lighting circuit

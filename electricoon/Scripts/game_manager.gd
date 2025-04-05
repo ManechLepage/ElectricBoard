@@ -1,7 +1,7 @@
 class_name GameManager
 extends Node
 
-@export var components: Array[Component]
+var components: Array[Component]
 var money_spent = 0
 signal place_component_request(component: Component, position: Vector2i)
 signal erase_component(position: Vector2i)

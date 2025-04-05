@@ -15,6 +15,8 @@ func _ready() -> void:
 	Game.grid_changed.connect(update_component_grid)
 	Game.erase_component.connect(erase_component)
 	Game.handle_hover.connect(handle_hover)
+	Game.grid_manager = self
+	Game.is_grille = true
 
 func get_mouse_grid_position() -> Vector2i:
 	return overlay.local_to_map(get_global_mouse_position())

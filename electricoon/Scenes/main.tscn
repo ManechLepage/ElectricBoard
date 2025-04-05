@@ -11,9 +11,9 @@
 [ext_resource type="Resource" uid="uid://clirxh2kbp4vd" path="res://Resources/Level1/copper_wire.tres" id="6_jkdf5"]
 [ext_resource type="Resource" uid="uid://pcfi02gji4j6" path="res://Resources/Level1/silver.tres" id="7_wsu2k"]
 [ext_resource type="Theme" uid="uid://dhd8uh8sr0fcm" path="res://Scenes/ui/start_button.tres" id="8_344ge"]
-[ext_resource type="Script" uid="uid://f80r5bd1130k" path="res://Scenes/camera_2d.gd" id="8_d1ilt"]
+[ext_resource type="Script" path="res://Scenes/camera_2d.gd" id="8_d1ilt"]
 [ext_resource type="PackedScene" uid="uid://bq055ta2pcnk2" path="res://Scenes/ui/level_1.tscn" id="9_ynf5e"]
-[ext_resource type="PackedScene" uid="uid://c2uq1687o00b" path="res://Scenes/ui/info_panel.tscn" id="10_6iyac"]
+[ext_resource type="PackedScene" path="res://Scenes/ui/info_panel.tscn" id="10_6iyac"]
 [ext_resource type="Texture2D" uid="uid://dk57hgdsfw7xt" path="res://Graphics/ui/short_circuit.aseprite" id="11_d1ilt"]
 
 [sub_resource type="Environment" id="Environment_8gbba"]

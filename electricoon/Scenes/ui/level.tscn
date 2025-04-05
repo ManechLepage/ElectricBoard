@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b4vs8vj5si25"]
 
-[ext_resource type="Theme" uid="uid://ckktkbm1dfag7" path="res://Scenes/ui/level_button.tres" id="1_ap4cb"]
+[ext_resource type="Theme" uid="uid://bsknrihm1mlce" path="res://Scenes/ui/level_button.tres" id="1_ap4cb"]
 [ext_resource type="Script" uid="uid://d0mrwk5uukkb6" path="res://level.gd" id="2_0huit"]
 
 [node name="level_button" type="Button"]

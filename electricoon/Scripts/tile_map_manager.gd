@@ -6,12 +6,15 @@ extends Node2D
 @onready var overlay: TileMapLayer = $Overlay
 @onready var component_overlay: TileMapLayer = $ComponentOverlay
 
+@onready var info_panel: Control = $"../CanvasLayer/InfoPanel"
+
 var components: Array[Component]
 
 func _ready() -> void:
 	Game.place_component_request.connect(handle_component_request)
 	Game.grid_changed.connect(update_component_grid)
 	Game.erase_component.connect(erase_component)
+	Game.handle_hover.connect(handle_hover)
 
 func get_mouse_grid_position() -> Vector2i:
 	return overlay.local_to_map(get_global_mouse_position())
@@ -88,3 +91,11 @@ func get_source() -> Source:
 		if component is Source:
 			return component
 	return null
+
+func handle_hover() -> void:
+	var component: Component = get_component_from_position(get_mouse_grid_position())
+	if component:
+		info_panel.visible = true
+		info_panel.load_component(component)
+	else:
+		info_panel.visible = false

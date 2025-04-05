@@ -11,7 +11,7 @@
 [ext_resource type="Resource" uid="uid://clirxh2kbp4vd" path="res://Resources/Level1/copper_wire.tres" id="6_jkdf5"]
 [ext_resource type="Resource" uid="uid://pcfi02gji4j6" path="res://Resources/Level1/silver.tres" id="7_wsu2k"]
 [ext_resource type="Theme" uid="uid://dhd8uh8sr0fcm" path="res://Scenes/ui/start_button.tres" id="8_344ge"]
-[ext_resource type="Script" path="res://Scenes/camera_2d.gd" id="8_d1ilt"]
+[ext_resource type="Script" uid="uid://f80r5bd1130k" path="res://Scenes/camera_2d.gd" id="8_d1ilt"]
 [ext_resource type="Resource" uid="uid://c0mcntr0w7qim" path="res://Resources/Level1/resistor.tres" id="8_k12tt"]
 [ext_resource type="PackedScene" path="res://Scenes/ui/info_panel.tscn" id="10_6iyac"]
 [ext_resource type="Texture2D" uid="uid://dk57hgdsfw7xt" path="res://Graphics/ui/short_circuit.aseprite" id="11_d1ilt"]
@@ -93,10 +93,10 @@ anchor_left = 0.06
 anchor_top = 0.054
 anchor_right = 0.06
 anchor_bottom = 0.054
-offset_left = 924.88
-offset_top = -40.992
-offset_right = 977.88
-offset_bottom = 12.008
+offset_left = 923.88
+offset_top = -34.992
+offset_right = 976.88
+offset_bottom = 18.008
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.28125, 1.28125)
@@ -110,12 +110,12 @@ unique_name_in_owner = true
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -215.0
-offset_top = 14.0
-offset_right = -149.0
-offset_bottom = 49.0
+offset_left = -217.0
+offset_top = 21.0
+offset_right = -151.0
+offset_bottom = 65.0
 grow_horizontal = 0
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 31
 text = "0 kg"
 horizontal_alignment = 2
 metadata/_edit_group_ = true

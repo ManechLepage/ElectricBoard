@@ -4,6 +4,7 @@ extends Button
 @onready var comp_sprite: TextureRect = $sprite
 @export var compon = ""
 var keys = [KEY_0, KEY_1, KEY_2, KEY_3, KEY_4, KEY_5]
+@onready var button: Button = $"."
 
 var component: Component
 
@@ -22,7 +23,7 @@ func _input(event: InputEvent) -> void:
 	for key in keys:
 		if Input.is_key_pressed(key):
 			for comp in _get_component_with_hotkey(key):
-				if comp.get_parent().visible == true:
+				if comp.get_parent().get_parent().visible == true:
 					Game.current_selected_component = comp
 					
 	print(Game.current_selected_component)
@@ -34,3 +35,7 @@ func _get_component_with_hotkey(wanted_hotkey):
 			if component.hotkey == wanted_hotkey:
 				list_components.append(component)
 	return(list_components)
+
+func _pressed() -> void:
+	if Game.current_selected_component == component:
+		button.focus

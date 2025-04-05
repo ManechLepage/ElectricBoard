@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dybwpq4lal6sj"]
+[gd_scene load_steps=2 format=3 uid="uid://dybwpq4lal6sj"]
 
-[ext_resource type="PackedScene" uid="uid://5iv1qn41gnq7" path="res://Scenes/ui/hotbar_button.tscn" id="1_oy4sx"]
-[ext_resource type="Script" uid="uid://bnwrpmqiukagq" path="res://Scenes/ui/hotbar.gd" id="1_r1m07"]
+[ext_resource type="Script" uid="uid://bnwrpmqiukagq" path="res://Scripts/ui/hotbar.gd" id="1_r1m07"]
 
 [node name="hotbar" type="Node2D"]
 script = ExtResource("1_r1m07")
@@ -21,15 +20,6 @@ metadata/_tab_index = 0
 layout_mode = 0
 offset_right = 1061.0
 offset_bottom = 86.0
-
-[node name="Control2" parent="TabContainer/Q Wires/HBoxContainer" instance=ExtResource("1_oy4sx")]
-custom_minimum_size = Vector2(80, 0)
-layout_mode = 2
-
-[node name="Control" parent="TabContainer/Q Wires/HBoxContainer" instance=ExtResource("1_oy4sx")]
-custom_minimum_size = Vector2(80, 0)
-layout_mode = 2
-compon = "Battery"
 
 [node name="W Source" type="TabBar" parent="TabContainer"]
 visible = false

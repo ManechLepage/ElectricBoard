@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Conductor" load_steps=3 format=3 uid="uid://mactoh6crqii"]
+
+[ext_resource type="Script" uid="uid://cj22jcm657iq5" path="res://Scripts/Components/conductor.gd" id="1_l6f5c"]
+[ext_resource type="Texture2D" uid="uid://blvyseci1khlb" path="res://Graphics/panel.aseprite" id="2_l6f5c"]
+
+[resource]
+script = ExtResource("1_l6f5c")
+connections = Array[bool]([false, false, false, false])
+current = 0.0
+name = &"Tralalrero"
+hotkey = 1
+tab_num = 1
+price = 10
+sprite_atlas_coord = Vector2i(0, 9)
+sprite = ExtResource("2_l6f5c")
+metadata/_custom_type_script = "uid://cj22jcm657iq5"

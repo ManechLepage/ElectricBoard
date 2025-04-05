@@ -2,7 +2,7 @@ extends Button
 @onready var cost_l: Label = $cost
 @onready var hotkey_l: Label = $hotkey
 @onready var comp_sprite: TextureRect = $sprite
-@export var compon = ""
+
 var keys = [KEY_0, KEY_1, KEY_2, KEY_3, KEY_4, KEY_5]
 @onready var button: Button = $"."
 
@@ -15,7 +15,7 @@ func load_component(_component: Component) -> void:
 	hotkey_l.text = str(component.hotkey)
 
 func _ready() -> void:
-	load_component(Game.get_component_by_name(compon))
+	pass
 	
 	print(_get_component_with_hotkey(1))
 
@@ -26,7 +26,6 @@ func _input(event: InputEvent) -> void:
 				if comp.get_parent().get_parent().visible == true:
 					Game.current_selected_component = comp
 					
-	print(Game.current_selected_component)
 		
 func _get_component_with_hotkey(wanted_hotkey):
 	var list_components = []
@@ -35,7 +34,3 @@ func _get_component_with_hotkey(wanted_hotkey):
 			if component.hotkey == wanted_hotkey:
 				list_components.append(component)
 	return(list_components)
-
-func _pressed() -> void:
-	if Game.current_selected_component == component:
-		button.focus

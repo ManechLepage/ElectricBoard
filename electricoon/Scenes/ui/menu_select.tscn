@@ -106,6 +106,12 @@ theme = SubResource("Theme_8dx61")
 text = "
 "
 
+[node name="CheckButton" type="CheckButton" parent="."]
+offset_left = 1096.0
+offset_top = -9.0
+offset_right = 1166.0
+offset_bottom = 48.0
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(216, 198)
 scale = Vector2(2.42, 2.42)

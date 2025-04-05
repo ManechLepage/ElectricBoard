@@ -63,3 +63,10 @@ func short_circuit():
 func _on_control_pressed() -> void:
 	control.disabled = false
 	Game.finish()
+
+
+func _on_check_button_pressed(button_pressed) -> void:
+	if button_pressed == true:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+	else:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)

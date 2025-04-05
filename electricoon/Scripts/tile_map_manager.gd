@@ -107,6 +107,8 @@ func handle_hover() -> void:
 		info_panel.visible = false
 
 func highlight(component: Conductor) -> void:
+	if component is Stopper:
+		return
 	for _component: Conductor in components:
 		if _component != component:
 			_component.is_hovered = false

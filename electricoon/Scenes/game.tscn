@@ -8,3 +8,5 @@ script = ExtResource("1_ebmjs")
 
 [node name="ElectricityManager" type="Node" parent="."]
 script = ExtResource("5_wowpa")
+
+[connection signal="grid_changed" from="." to="." method="_on_grid_changed"]

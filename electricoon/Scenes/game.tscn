@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://yhlguoy7d5e5"]
 
 [ext_resource type="Script" uid="uid://baklgq5hsc2q1" path="res://Scripts/game_manager.gd" id="1_ebmjs"]
-[ext_resource type="PackedScene" uid="uid://cb0bjjsx1k7yg" path="res://Scenes/ui/menu_select.tscn" id="2_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://cokqpgsvas45a" path="res://Scenes/ui/menu_select.tscn" id="2_wrm1d"]
 [ext_resource type="AudioStream" uid="uid://b3npve545ximw" path="res://sound/6086702162116608.wav" id="3_wrm1d"]
 [ext_resource type="Script" uid="uid://du8c5heeddhsk" path="res://Scenes/electricity_manager.gd" id="5_wowpa"]
 

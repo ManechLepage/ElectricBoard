@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bfqyeo4etmv4s" path="res://Graphics/ui/level2_tutorial.aseprite" id="1_0y0br"]
 [ext_resource type="Texture2D" uid="uid://c86bebjdrifao" path="res://Graphics/ui/hospital_sign.aseprite" id="2_h1fnw"]
 
-[node name="Control" type="TextureRect"]
+[node name="Control2" type="TextureRect"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

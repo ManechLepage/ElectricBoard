@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cj1am5plluydp"]
 
 [ext_resource type="PackedScene" uid="uid://c5urw2axvh48g" path="res://Scenes/main.tscn" id="1_ou4ko"]
-[ext_resource type="PackedScene" path="res://Scenes/level_4.tscn" id="8_5rtj3"]
+[ext_resource type="PackedScene" uid="uid://b7vbirk2ddmwe" path="res://Scenes/level_4.tscn" id="8_5rtj3"]
 
 [node name="Main" instance=ExtResource("1_ou4ko")]
 bulbs = 3

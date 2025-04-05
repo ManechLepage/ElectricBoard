@@ -7,7 +7,7 @@
 [ext_resource type="Resource" uid="uid://b2ggilln17t2c" path="res://Resources/bulb.tres" id="5_u1jx0"]
 [ext_resource type="Resource" uid="uid://clirxh2kbp4vd" path="res://Resources/Level1/copper_wire.tres" id="6_hlh03"]
 [ext_resource type="Resource" uid="uid://pcfi02gji4j6" path="res://Resources/Level1/silver.tres" id="7_vsx7g"]
-[ext_resource type="PackedScene" path="res://Scenes/level_5.tscn" id="8_vbbgi"]
+[ext_resource type="PackedScene" uid="uid://csxvvsho6g2xb" path="res://Scenes/level_5.tscn" id="8_vbbgi"]
 
 [node name="Main" instance=ExtResource("1_0oj8u")]
 components = Array[ExtResource("2_vbbgi")]([ExtResource("3_332hv"), ExtResource("4_yghbx"), ExtResource("5_u1jx0"), ExtResource("6_hlh03"), ExtResource("7_vsx7g")])

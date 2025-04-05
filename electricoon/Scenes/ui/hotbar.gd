@@ -11,9 +11,13 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Wires_tab"):
 		tab_container.current_tab = 0
+		Game.current_selected_component = null
 	elif Input.is_action_just_pressed("Source_tab"):
 		tab_container.current_tab = 1
+		Game.current_selected_component = null
 	elif Input.is_action_just_pressed("Mesures_tab"):
 		tab_container.current_tab = 2
+		Game.current_selected_component = null
 	elif Input.is_action_just_pressed("Products_tab"):
 		tab_container.current_tab = 3
+		Game.current_selected_component = null

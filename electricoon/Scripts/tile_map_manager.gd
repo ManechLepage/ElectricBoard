@@ -63,7 +63,6 @@ func update_component_grid() -> void:
 	update_connections()
 
 func update_connections() -> void:
-	print("-----------------------------------------------------")
 	for component in components:
 		if component is Conductor:
 			var conductor = component as Conductor
@@ -83,3 +82,6 @@ func get_connections(pos: Vector2i) -> Array[bool]:
 		else:
 			connections.append(false)
 	return connections
+
+func start(source: Source) -> void:
+	pass

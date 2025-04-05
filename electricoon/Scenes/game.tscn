@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://baklgq5hsc2q1" path="res://Scripts/game_manager.gd" id="1_ebmjs"]
 [ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="2_3dryh"]
-[ext_resource type="Resource" uid="uid://d3ou400g10duq" path="res://Resources/battery.tres" id="3_3dryh"]
+[ext_resource type="Resource" uid="uid://d3ou400g10duq" path="res://Resources/battery1.tres" id="3_3dryh"]
 [ext_resource type="Resource" uid="uid://ccyj1j8ay0683" path="res://Resources/wire.tres" id="4_wowpa"]
 [ext_resource type="Resource" uid="uid://mactoh6crqii" path="res://Resources/amperer.tres" id="5_i6g32"]
 [ext_resource type="Resource" uid="uid://c3x5a8e7c6np4" path="res://Resources/dsf.tres" id="6_1l0tm"]

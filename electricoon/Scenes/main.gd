@@ -6,13 +6,15 @@ extends Node2D
 @export var budget: int = 0
 @onready var hotbar: Node2D = $CanvasLayer/hotbar
 @onready var label: Label = $Label
-@onready var desc_label: Label = $Panel/Label
 @onready var panel: Panel = $Panel
+@onready var blueprint: TextureRect = $TextureRect
+@onready var button: Button = $Button
+
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	desc_label.text = description
-	
+	pass
 
 func get_components():
 	return components
@@ -25,4 +27,5 @@ func _process(delta: float) -> void:
 func _on_button_pressed() -> void:
 	hotbar.visible = true
 	hotbar.load_hotbar(components)
-	panel.visible = false
+	blueprint.visible = false
+	button.visible = false

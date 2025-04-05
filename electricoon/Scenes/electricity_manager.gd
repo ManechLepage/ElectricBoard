@@ -126,14 +126,13 @@ func calculate_total_resistance(paths: Array) -> float:
 
 func get_common_paths(paths: Array) -> Array[Conductor]:
 	var path_lengths: Array[int]
-	var common_path = []
+	var common_path: Array[Conductor]
 	for path in paths:
 		for conductor in path:
 			for pathos in paths:
 				if conductor in paths:
 					common_path.append(conductor)
 	return common_path
-	
 
 func get_consumers(conductors: Array[Conductor]) -> Array[Consumer]:
 	var consumers: Array[Consumer]

@@ -4,6 +4,7 @@ extends Node2D
 @export var preset: Array[Component]
 @export_multiline var description: String
 @export var budget: int = 0
+@export var bulbs: int = 0
 @onready var hotbar: Node2D = $CanvasLayer/hotbar
 @onready var label: Label = %Label
 @onready var panel: Panel = $Panel

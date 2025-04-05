@@ -13,6 +13,7 @@ signal handle_hover
 enum SelectionType {
 	DEFAULT
 }
+@export var level_select: PackedScene
 var main = preload("res://Scenes/main.tscn")
 var grid_manager: GridManager
 var selection_type: SelectionType = SelectionType.DEFAULT
@@ -53,9 +54,23 @@ func _input(event: InputEvent) -> void:
 		if Input.is_action_just_pressed("Escape"):
 			current_selected_component = null
 
+func win_bulbs():
+	var winning_quantity: int = grid_manager.get_parent().bulbs
+	for component: Component in grid_manager.components:
+		if component is Source:
+			winning_quantity -= 1
+	if winning_quantity < 1:
+		return true
+	return false
+
 func _on_grid_changed() -> void:
 	if is_grille:
 		money_spent = 0
 		for component in grid_manager.components:
 			money_spent += component.price
+		
+		if money_spent < grid_manager.get_parent().budget and win_bulbs():
+			get_tree().change_scene_to_packed(level_select)
+			
+			
 		grid_manager.footjob()

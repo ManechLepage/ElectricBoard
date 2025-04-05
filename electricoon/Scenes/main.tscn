@@ -13,7 +13,7 @@
 [ext_resource type="Theme" uid="uid://dhd8uh8sr0fcm" path="res://Scenes/ui/start_button.tres" id="8_344ge"]
 [ext_resource type="Script" uid="uid://f80r5bd1130k" path="res://Scenes/camera_2d.gd" id="8_d1ilt"]
 [ext_resource type="Resource" uid="uid://c0mcntr0w7qim" path="res://Resources/Level1/resistor.tres" id="8_k12tt"]
-[ext_resource type="Resource" uid="uid://bc2vy80hyx1j3" path="res://Resources/Level1/button.tres" id="9_h1bgf"]
+[ext_resource type="Resource" path="res://Resources/Level1/button.tres" id="9_h1bgf"]
 [ext_resource type="PackedScene" uid="uid://c2uq1687o00b" path="res://Scenes/ui/info_panel.tscn" id="10_6iyac"]
 [ext_resource type="Texture2D" uid="uid://dk57hgdsfw7xt" path="res://Graphics/ui/short_circuit.aseprite" id="11_d1ilt"]
 [ext_resource type="Texture2D" uid="uid://3etfln1i11c7" path="res://Graphics/carbon_footprint.aseprite" id="16_k12tt"]

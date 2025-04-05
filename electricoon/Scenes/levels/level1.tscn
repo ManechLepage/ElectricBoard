@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bq055ta2pcnk2" path="res://Scenes/ui/level_1.tscn" id="2_skpnj"]
 
 [node name="Main" instance=ExtResource("1_rahoo")]
+bulbs = 1
 
 [node name="TextureRect" parent="CanvasLayer/Start" index="0" instance=ExtResource("2_skpnj")]
 layout_mode = 1

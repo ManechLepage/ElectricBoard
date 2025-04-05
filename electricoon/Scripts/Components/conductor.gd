@@ -88,4 +88,3 @@ func conduct_current(previous_components: Array[Array], p: Conductor) -> Array[A
 		return previous_components
 	previous_components.remove_at(-1)
 	return []
-	

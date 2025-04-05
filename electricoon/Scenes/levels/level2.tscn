@@ -5,7 +5,12 @@
 
 [node name="Main" instance=ExtResource("1_e0h1l")]
 
-[node name="CanvasLayer_Container_Start#Control" parent="." index="0" instance=ExtResource("2_q0wn2")]
+[node name="Start" parent="CanvasLayer" index="5"]
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 
 [node name="Control" parent="CanvasLayer/Start" index="0" instance=ExtResource("2_q0wn2")]
 layout_mode = 1

@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource("2_qqyck")
 volts = 7.0
-can_breal = false
+can_break = false
 broken_limit = 0
 connections = Array[bool]([false, false, false, false])
 resistance = 10.0
@@ -15,6 +15,6 @@ name = &"Bulb"
 hotkey = 1
 tab_num = 2
 price = 20
-sprite_atlas_coord = Vector2i(4, 16)
+sprite_atlas_coord = Vector2i(16, 2)
 description = ""
 metadata/_custom_type_script = "uid://dnet58r4xungu"

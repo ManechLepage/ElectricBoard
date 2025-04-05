@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c2uq1687o00b"]
 
-[ext_resource type="Theme" uid="uid://b28rb17yk0pqt" path="res://Scenes/ui/panels.tres" id="1_5feb8"]
+[ext_resource type="Theme" path="res://Scenes/ui/panels.tres" id="1_5feb8"]
 [ext_resource type="Script" uid="uid://d2pyurwkoaey" path="res://Scripts/ui/info_panel.gd" id="1_dvdl8"]
 [ext_resource type="Texture2D" uid="uid://bbww6j66bavar" path="res://Addons/nklbdev.aseprite_importers/icon.png" id="2_45a6i"]
 

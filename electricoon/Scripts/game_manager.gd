@@ -3,6 +3,7 @@ extends Node
 @onready var control: Button = $CanvasLayer/Control
 var components: Array[Component]
 var money_spent = 0
+@onready var label: Label = %Label
 
 signal short_circuit
 signal place_component_request(component: Component, position: Vector2i)
@@ -53,7 +54,13 @@ func _input(event: InputEvent) -> void:
 			erase_component.emit(grid_manager.get_mouse_grid_position())
 		if Input.is_action_just_pressed("Escape"):
 			current_selected_component = null
-
+func current_bulbs():
+	var current = 0
+	for component: Component in grid_manager.components:
+		if component is Consumer:
+			if component.is_activated:
+				current += 1
+	return current
 func win_bulbs():
 	var winning_quantity: int = grid_manager.get_parent().bulbs
 	for component: Component in grid_manager.components:
@@ -70,7 +77,7 @@ func _on_grid_changed() -> void:
 		for component in grid_manager.components:
 			money_spent += component.price
 		
-		if money_spent < grid_manager.get_parent().budget:
+		if money_spent <= grid_manager.get_parent().budget:
 			if win_bulbs():
 				if grid_manager.get_parent().short_sprite.modulate.a == 0.0:
 					grid_manager.get_parent().control.disabled = false

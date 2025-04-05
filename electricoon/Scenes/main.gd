@@ -15,6 +15,7 @@ extends Node2D
 @onready var color_rect: ColorRect = %ColorRect
 @export var battery_max_use: int
 @onready var control: Button = $CanvasLayer/Control
+@onready var label_2: Label = $CanvasLayer/Label2
 
 
 # Called when the node enters the scene tree for the first time.
@@ -32,6 +33,7 @@ func get_components():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	label.text = str(Game.money_spent) + " / " + str(budget)
+	label_2.text = str(Game.current_bulbs()) + " / " + str(bulbs)
 
 
 func _on_button_pressed() -> void:

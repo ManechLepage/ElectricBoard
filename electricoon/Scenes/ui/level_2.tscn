@@ -30,8 +30,7 @@ text = "In this level, you are operating the backup lights
  in a hospital that faces frequent blackouts.
  You must create an emergency lighting circuit
  with the smallest carbon footprint possible. 
-Your circuit must keep three lightbuld on 
-for six hours. "
+"
 
 [node name="HospitalSign" type="Sprite2D" parent="."]
 position = Vector2(231, 140)

@@ -5,6 +5,7 @@ extends Component
 
 var current: float
 
+
 @export var resistance: float
 
 @export var connected_conductors: Array[Component]

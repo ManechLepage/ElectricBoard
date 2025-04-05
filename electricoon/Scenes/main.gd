@@ -11,11 +11,14 @@ extends Node2D
 @onready var button: Button = $Button
 @onready var blueprint: TextureRect = $TextureRect
 @onready var short_sprite: Sprite2D = $Sprite2D
+@onready var color_rect: ColorRect = $CanvasLayer/ColorRect
 
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	short_sprite.modulate.a = 0.0
+	color_rect.modulate.a = 0.0
 	Game.short_circuit.connect(short_circuit)
 
 func get_components():
@@ -33,4 +36,15 @@ func _on_button_pressed() -> void:
 	button.visible = false
 
 func short_circuit():
-	short_sprite.visible = true
+	short_sprite.modulate.a = 0.0
+	color_rect.modulate.a = 0.0
+	var tween = create_tween()
+	var _tween = create_tween()
+	tween.tween_property(short_sprite, "modulate:a", 1.0, 0.8).set_ease(Tween.EASE_IN_OUT)
+	_tween.tween_property(color_rect, "modulate:a", 1.0, 0.8).set_ease(Tween.EASE_IN_OUT)
+	await tween.finished
+	var tween2 = create_tween()
+	var _tween2 = create_tween()
+	tween2.tween_property(short_sprite, "modulate:a", 0.0, 0.8).set_ease(Tween.EASE_IN_OUT)
+	_tween2.tween_property(color_rect, "modulate:a", 0.0, 0.8).set_ease(Tween.EASE_IN_OUT)
+	await tween2.finished

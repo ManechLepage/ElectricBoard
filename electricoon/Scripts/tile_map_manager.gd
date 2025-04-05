@@ -1,10 +1,11 @@
 class_name GridManager
 extends Node2D
-
+@onready var foot: Label = %foot
 @onready var base: TileMapLayer = $Base
 @onready var components_grid: TileMapLayer = $Components
 @onready var overlay: TileMapLayer = $Overlay
 @onready var component_overlay: TileMapLayer = $ComponentOverlay
+@onready var carbon_footprint: TextureRect = $"../CanvasLayer/CarbonFootprint"
 
 @onready var info_panel: Control = %InfoPanel
 
@@ -106,9 +107,19 @@ func handle_hover() -> void:
 		info_panel.visible = false
 
 func highlight(component: Conductor) -> void:
+	if component is Stopper:
+		return
 	for _component: Conductor in components:
 		if _component != component:
 			_component.is_hovered = false
 		else:
 			_component.is_hovered = true
 	Game.grid_changed.emit()
+
+func footjob():
+	if Game.is_grille and foot:
+		var somme = 0
+		for conductor: Conductor in Game.grid_manager.components:
+			somme += conductor.resistance/100
+		foot.text = str(somme) + "kg"
+		carbon_footprint.scale = Vector2(1.281 + somme*4,1.281 +somme*4)

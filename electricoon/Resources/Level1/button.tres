@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Stopper" load_steps=3 format=3 uid="uid://bc2vy80hyx1j3"]
+
+[ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="1_ovihj"]
+[ext_resource type="Script" uid="uid://bwch4fumi7ke5" path="res://Scripts/Components/stopper.gd" id="2_ffi1h"]
+
+[resource]
+script = ExtResource("2_ffi1h")
+connections = Array[bool]([false, false, false, false])
+resistance = 0.0
+connected_conductors = Array[ExtResource("1_ovihj")]([])
+name = &"Button"
+hotkey = 2
+tab_num = 1
+price = 20
+sprite_atlas_coord = Vector2i(16, 14)
+description = ""
+metadata/_custom_type_script = "uid://bwch4fumi7ke5"

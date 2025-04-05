@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://d0b480tfq0t0j"]
+[gd_scene load_steps=3 format=3 uid="uid://d0b480tfq0t0j"]
 
 [ext_resource type="Texture2D" uid="uid://bfqyeo4etmv4s" path="res://Graphics/ui/level2_tutorial.aseprite" id="1_0y0br"]
+[ext_resource type="Texture2D" uid="uid://c86bebjdrifao" path="res://Graphics/ui/hospital_sign.aseprite" id="2_h1fnw"]
 
 [node name="Control" type="TextureRect"]
 anchors_preset = 15
@@ -28,3 +29,8 @@ text = "In this level, you are operating the backup lights
  with the smallest carbon footprint possible. 
 Your circuit must keep three lightbuld on 
 for six hours. "
+
+[node name="HospitalSign" type="Sprite2D" parent="."]
+position = Vector2(231, 140)
+scale = Vector2(10, 10)
+texture = ExtResource("2_h1fnw")

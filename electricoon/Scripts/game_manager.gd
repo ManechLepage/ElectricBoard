@@ -1,6 +1,6 @@
 class_name GameManager
 extends Node
-
+@onready var control: Button = $CanvasLayer/Control
 var components: Array[Component]
 var money_spent = 0
 
@@ -9,7 +9,7 @@ signal place_component_request(component: Component, position: Vector2i)
 signal erase_component(position: Vector2i)
 signal grid_changed
 signal handle_hover
-
+signal diddy 
 enum SelectionType {
 	DEFAULT
 }
@@ -57,8 +57,9 @@ func _input(event: InputEvent) -> void:
 func win_bulbs():
 	var winning_quantity: int = grid_manager.get_parent().bulbs
 	for component: Component in grid_manager.components:
-		if component is Source:
-			winning_quantity -= 1
+		if component is Consumer:
+			if component.is_activated:
+				winning_quantity -= 1
 	if winning_quantity < 1:
 		return true
 	return false
@@ -69,8 +70,11 @@ func _on_grid_changed() -> void:
 		for component in grid_manager.components:
 			money_spent += component.price
 		
-		if money_spent < grid_manager.get_parent().budget and win_bulbs():
-			get_tree().change_scene_to_packed(level_select)
-			
-			
+		if money_spent < grid_manager.get_parent().budget:
+			if win_bulbs():
+				if grid_manager.get_parent().short_sprite.modulate.a == 0.0:
+					grid_manager.get_parent().control.disabled = false
 		grid_manager.footjob()
+
+func finish() -> void:
+	get_tree().change_scene_to_packed(level_select)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://c5urw2axvh48g"]
+[gd_scene load_steps=20 format=4 uid="uid://c5urw2axvh48g"]
 
 [ext_resource type="Script" uid="uid://cemcu7sqkm7mi" path="res://Scripts/tile_map_manager.gd" id="1_jjgbg"]
 [ext_resource type="Script" uid="uid://by5lf0t8ol570" path="res://Scenes/main.gd" id="1_jjvhh"]
@@ -16,6 +16,7 @@
 [ext_resource type="Resource" uid="uid://bc2vy80hyx1j3" path="res://Resources/Level1/button.tres" id="9_h1bgf"]
 [ext_resource type="PackedScene" uid="uid://c2uq1687o00b" path="res://Scenes/ui/info_panel.tscn" id="10_6iyac"]
 [ext_resource type="Texture2D" uid="uid://dk57hgdsfw7xt" path="res://Graphics/ui/short_circuit.aseprite" id="11_d1ilt"]
+[ext_resource type="PackedScene" uid="uid://cosjcdehnw2pf" path="res://finish_button.tscn" id="16_b3802"]
 [ext_resource type="Texture2D" uid="uid://3etfln1i11c7" path="res://Graphics/carbon_footprint.aseprite" id="16_k12tt"]
 
 [sub_resource type="Environment" id="Environment_8gbba"]
@@ -129,6 +130,13 @@ offset_right = -136.0
 offset_bottom = -73.0
 theme_override_font_sizes/font_size = 32
 
+[node name="Control" parent="CanvasLayer" instance=ExtResource("16_b3802")]
+offset_left = 467.0
+offset_top = 381.0
+offset_right = -520.0
+offset_bottom = -174.0
+disabled = true
+
 [node name="Button" type="Button" parent="CanvasLayer"]
 unique_name_in_owner = true
 offset_left = 901.0
@@ -143,4 +151,5 @@ position = Vector2(1, 56)
 scale = Vector2(1.455, 1.455)
 texture = ExtResource("11_d1ilt")
 
+[connection signal="pressed" from="CanvasLayer/Control" to="." method="_on_control_pressed"]
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

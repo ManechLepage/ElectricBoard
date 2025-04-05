@@ -13,8 +13,8 @@ extends Node2D
 @onready var blueprint: Control = %Start
 @onready var short_sprite: Sprite2D = $Sprite2D
 @onready var color_rect: ColorRect = %ColorRect
-
 @export var battery_max_use: int
+@onready var control: Button = $CanvasLayer/Control
 
 
 # Called when the node enters the scene tree for the first time.
@@ -53,3 +53,11 @@ func short_circuit():
 	tween2.tween_property(short_sprite, "modulate:a", 0.0, 0.8).set_ease(Tween.EASE_IN_OUT)
 	_tween2.tween_property(color_rect, "modulate:a", 0.0, 0.8).set_ease(Tween.EASE_IN_OUT)
 	await tween2.finished
+
+
+
+
+
+func _on_control_pressed() -> void:
+	control.disabled = false
+	Game.finish()

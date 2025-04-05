@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cb0bjjsx1k7yg"]
+[gd_scene load_steps=15 format=3 uid="uid://cb0bjjsx1k7yg"]
 
 [ext_resource type="Script" uid="uid://buehm7botpuif" path="res://Scenes/ui/menu_select.gd" id="1_wr8qp"]
 [ext_resource type="PackedScene" uid="uid://b4vs8vj5si25" path="res://Scenes/ui/level.tscn" id="2_5afff"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c5urw2axvh48g" path="res://Scenes/main.tscn" id="4_jdm3d"]
 [ext_resource type="Texture2D" uid="uid://ckepdmry8a5ig" path="res://Graphics/ui/play_button_hov.aseprite" id="5_5n2i0"]
 [ext_resource type="PackedScene" uid="uid://bq055ta2pcnk2" path="res://Scenes/ui/level_1.tscn" id="5_16ctq"]
+[ext_resource type="PackedScene" uid="uid://daf1bxo8toqw7" path="res://Scenes/ui/lvl_2.tscn" id="5_eiikv"]
 [ext_resource type="Texture2D" uid="uid://cirgyfkregu3a" path="res://Graphics/ui/play_button_norm.aseprite" id="6_16ctq"]
 [ext_resource type="Texture2D" uid="uid://cpl7f4sltlg2n" path="res://Graphics/ui/play_button _pre.aseprite" id="7_eiikv"]
 
@@ -60,7 +61,7 @@ offset_top = 1232.0
 offset_right = 437.0
 offset_bottom = 1352.0
 text = "2"
-level_path = ExtResource("5_16ctq")
+level_path = ExtResource("5_eiikv")
 
 [node name="level3" parent="." instance=ExtResource("2_5afff")]
 layout_mode = 0

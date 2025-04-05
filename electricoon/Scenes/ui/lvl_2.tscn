@@ -1,57 +1,50 @@
-[gd_scene load_steps=14 format=4 uid="uid://c5urw2axvh48g"]
+[gd_scene load_steps=10 format=4 uid="uid://daf1bxo8toqw7"]
 
-[ext_resource type="Script" uid="uid://cemcu7sqkm7mi" path="res://Scripts/tile_map_manager.gd" id="1_jjgbg"]
-[ext_resource type="Script" uid="uid://by5lf0t8ol570" path="res://Scenes/main.gd" id="1_jjvhh"]
-[ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="2_21xkr"]
-[ext_resource type="TileSet" uid="uid://dhthbtsg5y2ef" path="res://Graphics/Grid/main.tres" id="2_bo1nx"]
-[ext_resource type="Resource" uid="uid://ccyj1j8ay0683" path="res://Resources/wire.tres" id="3_6bp64"]
-[ext_resource type="Resource" uid="uid://cappxxat8h1p7" path="res://Resources/battery.tres" id="4_344ge"]
-[ext_resource type="PackedScene" uid="uid://dybwpq4lal6sj" path="res://Scenes/ui/hotbar.tscn" id="4_jjvhh"]
-[ext_resource type="Resource" uid="uid://b2ggilln17t2c" path="res://Resources/bulb.tres" id="5_ynf5e"]
-[ext_resource type="Theme" uid="uid://dhd8uh8sr0fcm" path="res://Scenes/ui/start_button.tres" id="8_344ge"]
-[ext_resource type="Script" path="res://Scenes/camera_2d.gd" id="8_d1ilt"]
-[ext_resource type="PackedScene" uid="uid://bq055ta2pcnk2" path="res://Scenes/ui/level_1.tscn" id="9_ynf5e"]
-[ext_resource type="Texture2D" uid="uid://dk57hgdsfw7xt" path="res://Graphics/ui/short_circuit.aseprite" id="11_d1ilt"]
+[ext_resource type="Script" uid="uid://by5lf0t8ol570" path="res://Scenes/main.gd" id="1_jkgpt"]
+[ext_resource type="Script" uid="uid://cemcu7sqkm7mi" path="res://Scripts/tile_map_manager.gd" id="2_rc8md"]
+[ext_resource type="TileSet" uid="uid://dhthbtsg5y2ef" path="res://Graphics/Grid/main.tres" id="3_fe15v"]
+[ext_resource type="Script" path="res://Scenes/camera_2d.gd" id="4_oc3x7"]
+[ext_resource type="PackedScene" uid="uid://dybwpq4lal6sj" path="res://Scenes/ui/hotbar.tscn" id="5_8uyv5"]
+[ext_resource type="Theme" uid="uid://dhd8uh8sr0fcm" path="res://Scenes/ui/start_button.tres" id="6_igydw"]
+[ext_resource type="PackedScene" uid="uid://d0b480tfq0t0j" path="res://Scenes/ui/level_2.tscn" id="7_rc8md"]
+[ext_resource type="Texture2D" uid="uid://dk57hgdsfw7xt" path="res://Graphics/ui/short_circuit.aseprite" id="7_xjw3k"]
 
-[sub_resource type="Environment" id="Environment_8gbba"]
+[sub_resource type="Environment" id="Environment_s013h"]
 glow_enabled = true
 glow_intensity = 2.0
 fog_density = 0.0
 
-[node name="Main" type="Node2D"]
-texture_filter = 1
-script = ExtResource("1_jjvhh")
-components = Array[ExtResource("2_21xkr")]([ExtResource("3_6bp64"), ExtResource("4_344ge"), ExtResource("5_ynf5e")])
-budget = 100
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_jkgpt")
 
 [node name="TileMap" type="Node2D" parent="." groups=["Grid"]]
-script = ExtResource("1_jjgbg")
+script = ExtResource("2_rc8md")
 
 [node name="Base" type="TileMapLayer" parent="TileMap"]
 y_sort_enabled = true
 tile_map_data = PackedByteArray("AAD/////AAAAAAAAAAD///7/AAAAAAAAAAD+////AAAAAAAAAAD//wAAAAAAAAAAAAD+/wEAAAAAAAAAAAD//wIAAAAAAAAAAAD//wMAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAAAAAAAAAAAAP7/AAAAAAAAAAD///3/AAAAAAAAAAD///z/AAAAAAAAAAD+//3/AAAAAAAAAAD//wEAAAAAAAAAAAD///v/AAAAAAAAAAAAAPz/AAAAAAAAAAAAAP3/AAAAAAAAAAABAP7/AAAAAAAAAAABAP//AAAAAAAAAAABAAAAAAAAAAAAAAD+/wAAAAAAAAAAAAD+//7/AAAAAAAAAAD9////AAAAAAAAAAD9//7/AAAAAAAAAAD9//3/AAAAAAAAAAD+//z/AAAAAAAAAAD+//v/AAAAAAAAAAD///r/AAAAAAAAAAD///n/AAAAAAAAAAAAAPr/AAAAAAAAAAAAAPv/AAAAAAAAAAABAPz/AAAAAAAAAAABAP3/AAAAAAAAAAACAP7/AAAAAAAAAAACAP//AAAAAAAAAAACAAAAAAAAAAAAAAABAAEAAAAAAAAAAAABAAIAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAD//wQAAAAAAAAAAAD//wUAAAAAAAAAAAD+/wMAAAAAAAAAAAD+/wIAAAAAAAAAAAD9/wEAAAAAAAAAAAD9/wAAAAAAAAAAAAD8////AAAAAAAAAAD9/wIAAAAAAAAAAAD//wYAAAAAAAAAAAD+/wUAAAAAAAAAAAD+/wQAAAAAAAAAAAD9/wMAAAAAAAAAAAD8/wEAAAAAAAAAAAD8//7/AAAAAAAAAAD8//3/AAAAAAAAAAD7////AAAAAAAAAAD8/wAAAAAAAAAAAAD9//z/AAAAAAAAAAD9//v/AAAAAAAAAAD+//r/AAAAAAAAAAD+//n/AAAAAAAAAAD///j/AAAAAAAAAAD///f/AAAAAAAAAAAAAPj/AAAAAAAAAAAAAPn/AAAAAAAAAAABAPr/AAAAAAAAAAABAPv/AAAAAAAAAAACAPz/AAAAAAAAAAACAP3/AAAAAAAAAAADAP7/AAAAAAAAAAADAP//AAAAAAAAAAADAAAAAAAAAAAAAAACAAEAAAAAAAAAAAACAAIAAAAAAAAAAAABAAMAAAAAAAAAAAABAAQAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAYAAAAAAAAAAAD//wcAAAAAAAAAAAA=")
-tile_set = ExtResource("2_bo1nx")
+tile_set = ExtResource("3_fe15v")
 
 [node name="Components" type="TileMapLayer" parent="TileMap"]
-tile_set = ExtResource("2_bo1nx")
+tile_set = ExtResource("3_fe15v")
 
 [node name="ComponentOverlay" type="TileMapLayer" parent="TileMap"]
 self_modulate = Color(1, 1, 1, 0.588235)
-tile_set = ExtResource("2_bo1nx")
+tile_set = ExtResource("3_fe15v")
 
 [node name="Overlay" type="TileMapLayer" parent="TileMap"]
-tile_set = ExtResource("2_bo1nx")
+tile_set = ExtResource("3_fe15v")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
-script = ExtResource("8_d1ilt")
+script = ExtResource("4_oc3x7")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_8gbba")
+environment = SubResource("Environment_s013h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="hotbar" parent="CanvasLayer" instance=ExtResource("4_jjvhh")]
+[node name="hotbar" parent="CanvasLayer" instance=ExtResource("5_8uyv5")]
 visible = false
 
 [node name="Label" type="Label" parent="."]
@@ -66,14 +59,12 @@ offset_left = 96.0
 offset_top = 58.0
 offset_right = 152.0
 offset_bottom = 80.0
-theme = ExtResource("8_344ge")
+theme = ExtResource("6_igydw")
 
-[node name="TextureRect" parent="." instance=ExtResource("9_ynf5e")]
+[node name="Control" parent="." instance=ExtResource("7_rc8md")]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(1, 56)
 scale = Vector2(1.455, 1.455)
-texture = ExtResource("11_d1ilt")
-
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+texture = ExtResource("7_xjw3k")

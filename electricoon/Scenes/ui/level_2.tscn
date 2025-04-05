@@ -3,9 +3,34 @@
 [ext_resource type="Texture2D" uid="uid://bfqyeo4etmv4s" path="res://Graphics/ui/level2_tutorial.aseprite" id="1_0y0br"]
 
 [node name="Control" type="TextureRect"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = -1
+anchor_left = -0.483
+anchor_top = -0.461
+anchor_right = 0.517
+anchor_bottom = 0.539
+offset_left = 0.416016
+offset_top = -0.271973
+offset_right = 0.415955
+offset_bottom = -0.272034
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_0y0br")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 125.0
+offset_right = 1109.0
+offset_bottom = 457.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 641.0
+offset_bottom = 334.0
+scale = Vector2(1.69, 1.69)
+text = "In this level, you are operating the backup lights
+ in a hospital that faces frequent blackouts.
+ You must create an emergency lighting circuit
+ with the smallest carbon footprint possible. 
+Your circuit must keep three lightbuld on 
+for six hours. "

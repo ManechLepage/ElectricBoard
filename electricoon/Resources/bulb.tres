@@ -15,6 +15,6 @@ name = &"Bulb"
 hotkey = 1
 tab_num = 2
 price = 20
-sprite_atlas_coord = Vector2i(4, 16)
+sprite_atlas_coord = Vector2i(16, 2)
 description = ""
 metadata/_custom_type_script = "uid://dnet58r4xungu"

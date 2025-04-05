@@ -35,7 +35,6 @@ func _process(delta: float) -> void:
 	label.text = str(Game.money_spent) + " / " + str(budget)
 	label_2.text = str(Game.current_bulbs()) + " / " + str(bulbs)
 
-
 func _on_button_pressed() -> void:
 	hotbar.visible = true
 	hotbar.load_hotbar(components)

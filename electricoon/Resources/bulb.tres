@@ -6,6 +6,8 @@
 [resource]
 script = ExtResource("2_qqyck")
 volts = 7.0
+can_breal = false
+broken_limit = 0
 connections = Array[bool]([false, false, false, false])
 resistance = 10.0
 connected_conductors = Array[ExtResource("1_l5dd0")]([])

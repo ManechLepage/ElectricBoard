@@ -1,13 +1,71 @@
 [gd_scene load_steps=2 format=3 uid="uid://bq055ta2pcnk2"]
 
-[ext_resource type="PackedScene" uid="uid://c5urw2axvh48g" path="res://Scenes/main.tscn" id="1_yhjmw"]
+[ext_resource type="Texture2D" uid="uid://dxu7aggbq14ww" path="res://Graphics/wire_tutorials.aseprite" id="2_tsqri"]
 
-[node name="level_1" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="TextureRect" type="TextureRect"]
+offset_left = -111.0
+offset_top = -98.0
+offset_right = 88.0
+offset_bottom = 83.0
+texture = ExtResource("2_tsqri")
 
-[node name="Main" parent="." instance=ExtResource("1_yhjmw")]
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 32.0
+offset_right = 199.0
+offset_bottom = 61.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 451.0
+offset_bottom = 129.0
+scale = Vector2(0.22, 0.22)
+text = "Aluminum Wire:
+Resistivity: 2.82*10^-8 ohms
+Carbon footprint: 16-20 kg CO2  per kg
+1/8th the price of copper (they basically giving ts for free)
+"
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 82.0
+offset_right = 198.0
+offset_bottom = 111.0
+
+[node name="Label" type="Label" parent="Panel2"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 451.0
+offset_bottom = 129.0
+scale = Vector2(0.22, 0.22)
+text = "Copper Wire:
+Resistivity: 1.68*10^-8 ohm
+Carbon footprint: 4-5 kg CO2 per kg
+0.3-0.5 USD per meter
+"
+
+[node name="Panel3" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 131.0
+offset_right = 198.0
+offset_bottom = 160.0
+
+[node name="Label" type="Label" parent="Panel3"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 451.0
+offset_bottom = 129.0
+scale = Vector2(0.22, 0.22)
+text = "Silver Wire:
+Resistivity: 1.59*10^-8 ohms
+Carbon footprint: 11-12 kg CO2 for creation
+5-10$ per meter (fkg cher)
+
+"

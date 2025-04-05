@@ -13,7 +13,7 @@ name = &"Silver Wire"
 hotkey = 3
 tab_num = 0
 price = 20
-sprite_atlas_coord = Vector2i(0, 0)
+sprite_atlas_coord = Vector2i(0, 4)
 description = "The silver wire is top-of-the-line.
 it can handle long-lasting situations
 but costs a lot and isn't great for the earth."

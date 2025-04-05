@@ -13,7 +13,7 @@ name = &"Copper Wire"
 hotkey = 2
 tab_num = 0
 price = 10
-sprite_atlas_coord = Vector2i(0, 0)
+sprite_atlas_coord = Vector2i(0, 3)
 description = "This wire is in between the aluminum 
 and silver wires. It is a great option 
 for medium lasting circuits, as well as having a low carbon footprint."

@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://csxvvsho6g2xb"]
+
+[ext_resource type="Texture2D" uid="uid://bdtc8bixbxst5" path="res://Graphics/ui/level5_tutorial.aseprite" id="1_wb8gp"]
+
+[node name="TextureRect" type="TextureRect"]
+offset_right = 1151.0
+offset_bottom = 648.0
+texture = ExtResource("1_wb8gp")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 631.0
+offset_top = 114.0
+offset_right = 1120.0
+offset_bottom = 290.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 10.0
+offset_right = 491.0
+offset_bottom = 179.0
+text = "You are a house owner during a thunderstorm. With limited
+resources, you must create a circuit board to power five
+rooms in your house using as little electricity as possible."

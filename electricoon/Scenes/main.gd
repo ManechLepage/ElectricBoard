@@ -13,6 +13,7 @@ extends Node2D
 @onready var short_sprite: Sprite2D = $Sprite2D
 @onready var color_rect: ColorRect = %ColorRect
 
+@export var battery_max_use: int
 
 
 # Called when the node enters the scene tree for the first time.

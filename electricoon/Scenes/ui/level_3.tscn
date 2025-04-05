@@ -16,7 +16,10 @@ offset_bottom = 423.0
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
-offset_right = 633.0
-offset_bottom = 256.0
-text = "In this level, you are a factory worker that must keep all six lightbulbs on 
-everyday for ten years. "
+offset_left = 12.0
+offset_top = 6.0
+offset_right = 706.0
+offset_bottom = 262.0
+theme_override_font_sizes/font_size = 32
+text = "In this level, you are a factory worker that must keep all six 
+lightbulbs on everyday for ten years. "

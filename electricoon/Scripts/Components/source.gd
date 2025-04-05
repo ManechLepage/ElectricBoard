@@ -1,8 +1,8 @@
 class_name Source
 extends Conductor
 
-@export var volts: float
 @export var power: float
+@export var volts: float
 
 func get_positive_position() -> Vector2i:
 	if position.y % 2 == 0:

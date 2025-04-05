@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk57hgdsfw7xt"
-path="res://.godot/imported/short_circuit.aseprite-f8507cd5dd6923ec45a4e6443766a105.ctex"
+uid="uid://baoxnnmmdk04g"
+path="res://.godot/imported/level_button_hover.aseprite-2b8e484d6abaf93cd3a2e73830e9cb13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/ui/short_circuit.aseprite"
-dest_files=["res://.godot/imported/short_circuit.aseprite-f8507cd5dd6923ec45a4e6443766a105.ctex"]
+source_file="res://Graphics/ui/level_button_hover.aseprite"
+dest_files=["res://.godot/imported/level_button_hover.aseprite-2b8e484d6abaf93cd3a2e73830e9cb13.ctex"]
 
 [params]
 

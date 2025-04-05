@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpl7f4sltlg2n"
-path="res://.godot/imported/play_button _pre.aseprite-bf92682789b28c951fbe59133fe8460b.ctex"
+uid="uid://bhqo20n7lc4s8"
+path="res://.godot/imported/start_button.aseprite-1dfbfb5371458fc4d6e8e9fddbe69c6b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/play_button _pre.aseprite"
-dest_files=["res://.godot/imported/play_button _pre.aseprite-bf92682789b28c951fbe59133fe8460b.ctex"]
+source_file="res://Graphics/ui/start_button.aseprite"
+dest_files=["res://.godot/imported/start_button.aseprite-1dfbfb5371458fc4d6e8e9fddbe69c6b.ctex"]
 
 [params]
 

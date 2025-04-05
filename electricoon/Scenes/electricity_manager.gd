@@ -22,11 +22,17 @@ func _process(delta: float) -> void:
 					print(consumer.name, ": ", consumer.is_activated)
 
 func is_short_circuit(paths: Array) -> bool:
+	var bools: Array[bool]
 	for path in paths:
+		var has_consumer: bool = false
 		for conductor: Conductor in path:
 			if conductor is Consumer:
-				return false
-	return paths.size() > 0
+				has_consumer = true
+		bools.append(has_consumer)
+	for _bool in bools:
+		if not _bool:
+			return paths.size() > 0
+	return false
 
 func conduct(_source: Source) -> Array:
 	source = _source

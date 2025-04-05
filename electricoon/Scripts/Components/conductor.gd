@@ -4,6 +4,7 @@ extends Component
 @export var connections: Array[bool] = [false, false, false, false] #Up-Left-Down-Right
 
 @export var current: float
+@export var resistance: float
 
 @export var connected_conductors: Array[Component]
 

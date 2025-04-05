@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://coc7j3mmcdsl4"
-path="res://.godot/imported/start_button_hover.aseprite-1584bc00bd9e733e1af45de5617ce94c.ctex"
+uid="uid://ckepdmry8a5ig"
+path="res://.godot/imported/play_button_hov.aseprite-42640abfa2e04d07f05ecbf70fb057de.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/start_button_hover.aseprite"
-dest_files=["res://.godot/imported/start_button_hover.aseprite-1584bc00bd9e733e1af45de5617ce94c.ctex"]
+source_file="res://Graphics/ui/play_button_hov.aseprite"
+dest_files=["res://.godot/imported/play_button_hov.aseprite-42640abfa2e04d07f05ecbf70fb057de.ctex"]
 
 [params]
 

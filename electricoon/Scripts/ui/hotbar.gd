@@ -6,7 +6,7 @@ var hotbar_button = preload("res://Scenes/ui/hotbar_button.tscn")
 @onready var containers = [$"TabContainer/Q   Wires/HBoxContainer",$"TabContainer/W  Source/HBoxContainer",$"TabContainer/E  Mesures/HBoxContainer",$"TabContainer/R  Products/HBoxContainer"]
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	load_hotbar()
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -23,8 +23,8 @@ func _process(delta: float) -> void:
 		tab_container.current_tab = 3
 		Game.current_selected_component = null
 
-func load_hotbar():
-	for component in Game.components:
+func load_hotbar(components):
+	for component in components:
 		var tab = component.tab_num
 		var hot_but = hotbar_button.instantiate()
 		containers[tab].add_child(hot_but)

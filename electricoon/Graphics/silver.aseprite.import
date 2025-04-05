@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://dk4u5aedw6tut"
+path="res://.godot/imported/silver.aseprite-081fb630a589ca3bf4f350aff3d60123.res"
+
+[deps]
+
+source_file="res://Graphics/silver.aseprite"
+dest_files=["res://.godot/imported/silver.aseprite-081fb630a589ca3bf4f350aff3d60123.res"]
+
+[params]
+

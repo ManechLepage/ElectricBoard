@@ -38,4 +38,6 @@ script = ExtResource("3_8gbba")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_8gbba")
 
-[node name="hotbar" parent="." instance=ExtResource("4_jjvhh")]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="hotbar" parent="CanvasLayer" instance=ExtResource("4_jjvhh")]

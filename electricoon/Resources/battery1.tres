@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Conductor" load_steps=4 format=3 uid="uid://d3ou400g10duq"]
+[gd_resource type="Resource" script_class="Conductor" load_steps=4 format=3 uid="uid://dkchfvh3dxk2m"]
 
 [ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="1_4yeh2"]
 [ext_resource type="Script" uid="uid://cj22jcm657iq5" path="res://Scripts/Components/conductor.gd" id="2_bhpky"]

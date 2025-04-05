@@ -15,4 +15,9 @@ func load_component(component: Component) -> void:
 	if component is Consumer:
 		var consumer: Consumer = component as Consumer
 		description.text = "Voltage: " + str(consumer.volts) + "v\n" 
-		
+	if component is Source:
+		var source: Source = component as Source
+		description.text = "Voltage: " + str(source.volts) + "v\n" 
+		description.text = "Power: " + str(source.power) + "v\n"
+	
+	description.text += component.description

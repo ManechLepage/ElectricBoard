@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://c5urw2axvh48g"]
+[gd_scene load_steps=15 format=4 uid="uid://c5urw2axvh48g"]
 
 [ext_resource type="Script" uid="uid://cemcu7sqkm7mi" path="res://Scripts/tile_map_manager.gd" id="1_jjgbg"]
 [ext_resource type="Script" uid="uid://by5lf0t8ol570" path="res://Scenes/main.gd" id="1_jjvhh"]
@@ -9,9 +9,10 @@
 [ext_resource type="PackedScene" uid="uid://dybwpq4lal6sj" path="res://Scenes/ui/hotbar.tscn" id="4_jjvhh"]
 [ext_resource type="Resource" uid="uid://b2ggilln17t2c" path="res://Resources/bulb.tres" id="5_ynf5e"]
 [ext_resource type="Theme" uid="uid://dhd8uh8sr0fcm" path="res://Scenes/ui/start_button.tres" id="8_344ge"]
-[ext_resource type="Script" uid="uid://f80r5bd1130k" path="res://Scenes/camera_2d.gd" id="8_d1ilt"]
+[ext_resource type="Script" path="res://Scenes/camera_2d.gd" id="8_d1ilt"]
 [ext_resource type="PackedScene" uid="uid://bq055ta2pcnk2" path="res://Scenes/ui/level_1.tscn" id="9_ynf5e"]
-[ext_resource type="PackedScene" uid="uid://c2uq1687o00b" path="res://Scenes/ui/info_panel.tscn" id="10_6iyac"]
+[ext_resource type="PackedScene" path="res://Scenes/ui/info_panel.tscn" id="10_6iyac"]
+[ext_resource type="Texture2D" uid="uid://dk57hgdsfw7xt" path="res://Graphics/ui/short_circuit.aseprite" id="11_d1ilt"]
 
 [sub_resource type="Environment" id="Environment_8gbba"]
 glow_enabled = true
@@ -81,5 +82,6 @@ theme = ExtResource("8_344ge")
 visible = false
 position = Vector2(1, 56)
 scale = Vector2(1.455, 1.455)
+texture = ExtResource("11_d1ilt")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

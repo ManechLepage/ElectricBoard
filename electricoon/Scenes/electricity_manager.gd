@@ -21,6 +21,7 @@ func _process(delta: float) -> void:
 					var consumer: Consumer = conductor
 					print(consumer.name, ": ", consumer.is_activated)
 	footjob()
+
 func is_short_circuit(paths: Array) -> bool:
 	var bools: Array[bool]
 	for path in paths:

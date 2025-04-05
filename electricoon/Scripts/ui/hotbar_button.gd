@@ -32,3 +32,7 @@ func _get_component_with_hotkey(wanted_hotkey):
 			if component.hotkey == wanted_hotkey:
 				list_components.append(component)
 	return(list_components)
+
+
+func _on_pressed() -> void:
+	Game.current_selected_component = component

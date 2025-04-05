@@ -2,7 +2,7 @@ class_name GameManager
 extends Node
 
 @export var components: Array[Component]
-
+var money_spent = 0
 signal place_component_request(component: Component, position: Vector2i)
 signal erase_component(position: Vector2i)
 signal grid_changed
@@ -34,6 +34,8 @@ func _input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("LeftClick"):
 		if current_selected_component:
 			place_component_request.emit(current_selected_component, grid_manager.get_mouse_grid_position())
+			money_spent += current_selected_component.price
+			print(money_spent)
 	if Input.is_action_just_pressed("RightClick"):
 		erase_component.emit(grid_manager.get_mouse_grid_position())
 	

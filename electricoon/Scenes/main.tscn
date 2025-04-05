@@ -1,7 +1,10 @@
-[gd_scene load_steps=5 format=4 uid="uid://c5urw2axvh48g"]
+[gd_scene load_steps=8 format=4 uid="uid://c5urw2axvh48g"]
 
 [ext_resource type="Script" uid="uid://cemcu7sqkm7mi" path="res://Scripts/tile_map_manager.gd" id="1_jjgbg"]
+[ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="2_21xkr"]
 [ext_resource type="TileSet" uid="uid://dhthbtsg5y2ef" path="res://Graphics/Grid/main.tres" id="2_bo1nx"]
+[ext_resource type="Resource" uid="uid://ccyj1j8ay0683" path="res://Resources/wire.tres" id="3_6bp64"]
+[ext_resource type="Resource" uid="uid://cappxxat8h1p7" path="res://Resources/battery.tres" id="4_344ge"]
 [ext_resource type="PackedScene" uid="uid://dybwpq4lal6sj" path="res://Scenes/ui/hotbar.tscn" id="4_jjvhh"]
 
 [sub_resource type="Environment" id="Environment_8gbba"]
@@ -14,6 +17,7 @@ texture_filter = 1
 
 [node name="TileMap" type="Node2D" parent="." groups=["Grid"]]
 script = ExtResource("1_jjgbg")
+components = Array[ExtResource("2_21xkr")]([ExtResource("3_6bp64"), ExtResource("4_344ge")])
 
 [node name="Base" type="TileMapLayer" parent="TileMap"]
 y_sort_enabled = true

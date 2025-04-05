@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://5iv1qn41gnq7"]
+[gd_scene load_steps=3 format=3 uid="uid://5iv1qn41gnq7"]
 
 [ext_resource type="Script" uid="uid://bo174bmamiihp" path="res://Scripts/ui/hotbar_button.gd" id="1_hwxm4"]
+[ext_resource type="Texture2D" uid="uid://qqja0rkmpagf" path="res://Graphics/money.aseprite" id="2_wia8r"]
 
 [node name="Control" type="Button"]
 custom_minimum_size = Vector2(80, 0)
@@ -39,6 +40,7 @@ offset_top = 7.0
 offset_right = 53.0
 offset_bottom = 39.0
 scale = Vector2(0.36, 0.36)
+texture = ExtResource("2_wia8r")
 
 [node name="hotkey" type="Label" parent="."]
 layout_mode = 0
@@ -48,3 +50,5 @@ offset_right = 13.0
 offset_bottom = 22.0
 scale = Vector2(1.655, 1.655)
 text = "1"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

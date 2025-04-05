@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://c5urw2axvh48g"]
+[gd_scene load_steps=13 format=4 uid="uid://c5urw2axvh48g"]
 
 [ext_resource type="Script" uid="uid://cemcu7sqkm7mi" path="res://Scripts/tile_map_manager.gd" id="1_jjgbg"]
 [ext_resource type="Script" uid="uid://by5lf0t8ol570" path="res://Scenes/main.gd" id="1_jjvhh"]
@@ -10,6 +10,7 @@
 [ext_resource type="Resource" uid="uid://b2ggilln17t2c" path="res://Resources/bulb.tres" id="5_ynf5e"]
 [ext_resource type="Theme" uid="uid://dhd8uh8sr0fcm" path="res://Scenes/ui/start_button.tres" id="8_344ge"]
 [ext_resource type="PackedScene" uid="uid://bq055ta2pcnk2" path="res://Scenes/ui/level_1.tscn" id="9_ynf5e"]
+[ext_resource type="Texture2D" uid="uid://o1wyjbhuljg8" path="res://Graphics/ui/short_circuit.aseprite" id="11_d1ilt"]
 
 [sub_resource type="Environment" id="Environment_8gbba"]
 glow_enabled = true
@@ -65,5 +66,10 @@ offset_bottom = 80.0
 theme = ExtResource("8_344ge")
 
 [node name="TextureRect" parent="." instance=ExtResource("9_ynf5e")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3, 59)
+scale = Vector2(1.46, 1.46)
+texture = ExtResource("11_d1ilt")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

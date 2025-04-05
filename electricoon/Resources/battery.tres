@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource("1_dc81i")
 connections = Array[bool]([false, false, false, false])
+current = 0.0
 name = &"Battery"
 hotkey = 0
 tab_num = 0

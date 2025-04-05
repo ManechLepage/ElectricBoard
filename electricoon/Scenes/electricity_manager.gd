@@ -20,7 +20,7 @@ func _process(delta: float) -> void:
 				if conductor is Consumer:
 					var consumer: Consumer = conductor
 					print(consumer.name, ": ", consumer.is_activated)
-
+	footjob()
 func is_short_circuit(paths: Array) -> bool:
 	var bools: Array[bool]
 	for path in paths:
@@ -167,7 +167,7 @@ func get_total_resistance(conductors: Array[Conductor]) -> float:
 		total_resistance += component.resistance
 	return total_resistance
 
-func footjob(total_resistance, time):
+func footjob():
 	var somme = 0
 	for conductor: Conductor in Game.grid_manager.components:
 		somme += conductor.Resistance

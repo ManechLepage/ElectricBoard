@@ -22,22 +22,24 @@ func conduct(_source: Source) -> Array:
 	current_path.append(source)
 	
 	dfs(source)
-	print(paths)
+	for path in paths:
+		if path.size() > 3 and path[1] == Game.grid_manager.get_component_from_position(source.get_positive_position()):
+			print(path.size())
 	return paths
 
 func dfs(current_conductor: Conductor) -> void:
+	#if current_conductor != source:
+	visited_paths[current_conductor] = true
+
+	for neighbor: Conductor in current_conductor.connected_conductors:
+		if neighbor == source:
+			var path_copy = current_path.duplicate()
+			path_copy.append(source)
+			paths.append(path_copy)
+		elif not visited_paths.has(neighbor):
+			current_path.append(neighbor)
+			dfs(neighbor)
+			current_path.pop_back()
+
 	if current_conductor != source:
-		visited_paths[current_conductor] = true
-
-		for neighbor: Conductor in current_conductor.connected_conductors:
-			if neighbor == source and current_path.size() > 1:
-				var path_copy = current_path.duplicate()
-				path_copy.append(source)
-				paths.append(path_copy)
-			elif not visited_paths.has(neighbor):
-				current_path.append(neighbor)
-				dfs(neighbor)
-				current_path.pop_back()
-
-		if current_conductor != source:
-			visited_paths.erase(current_conductor)
+		visited_paths.erase(current_conductor)

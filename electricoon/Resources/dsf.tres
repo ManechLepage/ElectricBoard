@@ -1,12 +1,15 @@
-[gd_resource type="Resource" script_class="Conductor" load_steps=3 format=3 uid="uid://c3x5a8e7c6np4"]
+[gd_resource type="Resource" script_class="Conductor" load_steps=4 format=3 uid="uid://c3x5a8e7c6np4"]
 
 [ext_resource type="Script" uid="uid://cj22jcm657iq5" path="res://Scripts/Components/conductor.gd" id="1_kaisl"]
+[ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="1_sh4tf"]
 [ext_resource type="Texture2D" uid="uid://ck218uktj3kb8" path="res://Graphics/colorpalette.aseprite" id="2_kaisl"]
 
 [resource]
 script = ExtResource("1_kaisl")
 connections = Array[bool]([false, false, false, false])
 current = 0.0
+resistance = 0.0
+connected_conductors = Array[ExtResource("1_sh4tf")]([])
 name = &"Pourquoi la"
 hotkey = 1
 tab_num = 2

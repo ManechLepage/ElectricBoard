@@ -76,3 +76,15 @@ func update_connected_components() -> void:
 		var component: Component = Game.grid_manager.get_component_from_position(tile)
 		if component:
 			connected_conductors.append(component)
+
+func conduct_current(previous_components: Array[Array], p: Conductor) -> Array[Array]:
+	for conductor: Conductor in connected_conductors:
+		if conductor != p:
+			for i in previous_components:
+				if conductor not in previous_components:
+					previous_components[-1].append(self)
+					return conduct_current(previous_components, self)
+	if self is Source:
+		return previous_components
+	previous_components.remove_at(-1)
+	return []

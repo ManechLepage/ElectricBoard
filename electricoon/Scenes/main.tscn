@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=4 uid="uid://c5urw2axvh48g"]
+[gd_scene load_steps=5 format=4 uid="uid://c5urw2axvh48g"]
 
 [ext_resource type="Script" uid="uid://cemcu7sqkm7mi" path="res://Scripts/tile_map_manager.gd" id="1_jjgbg"]
 [ext_resource type="TileSet" uid="uid://dhthbtsg5y2ef" path="res://Graphics/Grid/main.tres" id="2_bo1nx"]
-[ext_resource type="Script" uid="uid://b41xpuwojlfo0" path="res://Scripts/camera_2d.gd" id="3_8gbba"]
 [ext_resource type="PackedScene" uid="uid://dybwpq4lal6sj" path="res://Scenes/ui/hotbar.tscn" id="4_jjvhh"]
 
 [sub_resource type="Environment" id="Environment_8gbba"]
@@ -33,7 +32,6 @@ tile_set = ExtResource("2_bo1nx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
-script = ExtResource("3_8gbba")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_8gbba")

@@ -7,13 +7,15 @@
 script = ExtResource("1_r1m07")
 
 [node name="TabContainer" type="TabContainer" parent="."]
-offset_left = 35.0
-offset_top = 488.0
-offset_right = 1096.0
-offset_bottom = 605.0
+offset_left = 18.0
+offset_top = 474.0
+offset_right = 1079.0
+offset_bottom = 591.0
+scale = Vector2(1.365, 1.365)
 current_tab = 0
 
 [node name="Q   Wires" type="TabBar" parent="TabContainer"]
+custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -43,16 +45,16 @@ offset_right = 1061.0
 offset_bottom = 86.0
 
 [node name="Circle" type="Sprite2D" parent="."]
-position = Vector2(60, 505)
+position = Vector2(46, 490)
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("2_r1m07")
 
 [node name="Circle2" type="Sprite2D" parent="."]
-position = Vector2(150, 503)
+position = Vector2(136, 489)
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("2_r1m07")
 
 [node name="Circle3" type="Sprite2D" parent="."]
-position = Vector2(243.6, 503.6)
+position = Vector2(225, 490)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_r1m07")

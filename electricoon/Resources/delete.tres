@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Conductor" load_steps=3 format=3 uid="uid://dnp5km0vmnccc"]
+
+[ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="1_j4ymh"]
+[ext_resource type="Script" uid="uid://cj22jcm657iq5" path="res://Scripts/Components/conductor.gd" id="2_cjxag"]
+
+[resource]
+script = ExtResource("2_cjxag")
+connections = Array[bool]([false, false, false, false])
+current = 0.0
+resistance = 0.0
+connected_conductors = Array[ExtResource("1_j4ymh")]([])
+name = &"Delete"
+hotkey = 0
+tab_num = 4
+price = 0
+sprite_atlas_coord = Vector2i(4, 0)
+metadata/_custom_type_script = "uid://cj22jcm657iq5"

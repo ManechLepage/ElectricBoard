@@ -1,16 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://cj1am5plluydp"]
+[gd_scene load_steps=3 format=3 uid="uid://cj1am5plluydp"]
 
 [ext_resource type="PackedScene" uid="uid://c5urw2axvh48g" path="res://Scenes/main.tscn" id="1_ou4ko"]
-[ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="2_5rtj3"]
-[ext_resource type="Resource" uid="uid://b1lor4s6n7p1x" path="res://Resources/Level1/wirelvl1.tres" id="3_mrlvs"]
-[ext_resource type="Resource" uid="uid://cappxxat8h1p7" path="res://Resources/battery.tres" id="4_1i4wi"]
-[ext_resource type="Resource" uid="uid://b2ggilln17t2c" path="res://Resources/bulb.tres" id="5_r4q1w"]
-[ext_resource type="Resource" uid="uid://clirxh2kbp4vd" path="res://Resources/Level1/copper_wire.tres" id="6_ryc53"]
-[ext_resource type="Resource" uid="uid://pcfi02gji4j6" path="res://Resources/Level1/silver.tres" id="7_vqu04"]
 [ext_resource type="PackedScene" uid="uid://b7vbirk2ddmwe" path="res://Scenes/level_4.tscn" id="8_5rtj3"]
 
 [node name="Main" instance=ExtResource("1_ou4ko")]
-components = Array[ExtResource("2_5rtj3")]([ExtResource("3_mrlvs"), ExtResource("4_1i4wi"), ExtResource("5_r4q1w"), ExtResource("6_ryc53"), ExtResource("7_vqu04")])
 
 [node name="Start" parent="CanvasLayer" index="3"]
 anchors_preset = 0

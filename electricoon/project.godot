@@ -47,6 +47,10 @@ folder_colors={
 
 Grid=""
 
+[gui]
+
+theme/custom_font="uid://ccvvovwg22b6r"
+
 [input]
 
 zoomout={

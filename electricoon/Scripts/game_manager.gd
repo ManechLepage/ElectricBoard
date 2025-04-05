@@ -41,7 +41,11 @@ func _input(event: InputEvent) -> void:
 		handle_hover.emit()
 		if Input.is_action_just_pressed("LeftClick"):
 			if current_selected_component:
-				place_component_request.emit(current_selected_component, grid_manager.get_mouse_grid_position())
+				if current_selected_component is Source:
+					if not has_battery():
+						place_component_request.emit(current_selected_component, grid_manager.get_mouse_grid_position())
+				else:
+					place_component_request.emit(current_selected_component, grid_manager.get_mouse_grid_position())
 	
 		if Input.is_action_just_pressed("RightClick"):
 			erase_component.emit(grid_manager.get_mouse_grid_position())
@@ -53,3 +57,9 @@ func _on_grid_changed() -> void:
 		money_spent = 0
 		for component in grid_manager.components:
 			money_spent += component.price
+
+func has_battery():
+	for component in grid_manager.components:
+		if component is Source:
+			return true
+	return false

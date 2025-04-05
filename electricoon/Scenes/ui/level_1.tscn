@@ -18,11 +18,12 @@ offset_bottom = 61.0
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 4.0
+offset_left = 1.0
 offset_top = 2.0
-offset_right = 451.0
-offset_bottom = 129.0
+offset_right = 469.0
+offset_bottom = 134.0
 scale = Vector2(0.22, 0.22)
+theme_override_font_sizes/font_size = 17
 text = "Aluminum Wire:
 Resistivity: 2.82*10^-8 ohms
 Carbon footprint: 16-20 kg CO2  per kg

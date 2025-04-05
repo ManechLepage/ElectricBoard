@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://baoxnnmmdk04g"
-path="res://.godot/imported/level_button_hover.aseprite-ea0251d1cf41fc2ea3856421c77057a6.ctex"
+uid="uid://ckv5c4vnv81ml"
+path="res://.godot/imported/level_button_press.aseprite-15091e0ef5fd8a431a016bd9ff93a946.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/level_button_hover.aseprite"
-dest_files=["res://.godot/imported/level_button_hover.aseprite-ea0251d1cf41fc2ea3856421c77057a6.ctex"]
+source_file="res://Graphics/ui/level_button_press.aseprite"
+dest_files=["res://.godot/imported/level_button_press.aseprite-15091e0ef5fd8a431a016bd9ff93a946.ctex"]
 
 [params]
 

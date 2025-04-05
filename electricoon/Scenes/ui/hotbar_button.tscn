@@ -66,27 +66,5 @@ offset_bottom = 81.0
 theme = SubResource("Theme_gnilw")
 icon = ExtResource("3_bmweg")
 
-[node name="Panel" type="Panel" parent="."]
-visible = false
-layout_mode = 0
-offset_left = 138.0
-offset_top = -309.0
-offset_right = 947.0
-offset_bottom = -174.0
-
-[node name="Label" type="Label" parent="Panel"]
-clip_contents = true
-layout_mode = 0
-offset_left = 11.0
-offset_top = 7.0
-offset_right = 789.0
-offset_bottom = 232.0
-theme_override_font_sizes/font_size = 24
-text = "This is a wire. It lets you connect components to sources of energy. 
-You can connect multiple together increasing its utility… 
-But at what cost?
-"
-clip_text = true
-
 [connection signal="pressed" from="." to="." method="_on_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

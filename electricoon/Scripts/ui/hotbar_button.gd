@@ -11,12 +11,12 @@ var component: Component
 func load_component(_component: Component) -> void:
 	component = _component
 	comp_sprite.texture = component.sprite
-	#if component.price is_equal_approx(bool(component.price), 0.0):
-		#cost_l.text = str(component.price)
-		#hotkey_l.text = str(component.hotkey)
-	#else:
-		#cost_l.text = ""
-		#hotkey_l.text = ""
+	if component.price == 0 and if component.hotkey == 0:
+		cost_l.text = str(component.price)
+		hotkey_l.text = str(component.hotkey)
+	else:
+		cost_l.text = ""
+		hotkey_l.text = ""
 
 func _ready() -> void:
 	pass
@@ -26,7 +26,6 @@ func _input(event: InputEvent) -> void:
 		if Input.is_key_pressed(key):
 			for comp in _get_component_with_hotkey(keys.find(key)):
 				if button.get_parent().get_parent().visible == true and component == comp:
-					print(button.get_parent().get_parent().visible)
 					Game.current_selected_component = comp
 					
 		

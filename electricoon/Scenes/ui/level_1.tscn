@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://bq055ta2pcnk2"]
+[gd_scene load_steps=3 format=3 uid="uid://bq055ta2pcnk2"]
 
+[ext_resource type="Theme" uid="uid://b28rb17yk0pqt" path="res://Scenes/ui/panels.tres" id="2_s68wt"]
 [ext_resource type="Texture2D" uid="uid://dxu7aggbq14ww" path="res://Graphics/wire_tutorials.aseprite" id="2_tsqri"]
 
 [node name="TextureRect" type="TextureRect"]
@@ -11,10 +12,11 @@ texture = ExtResource("2_tsqri")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 95.0
+offset_left = 93.0
 offset_top = 32.0
-offset_right = 199.0
+offset_right = 197.0
 offset_bottom = 61.0
+theme = ExtResource("2_s68wt")
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
@@ -35,6 +37,7 @@ offset_left = 94.0
 offset_top = 82.0
 offset_right = 198.0
 offset_bottom = 111.0
+theme = ExtResource("2_s68wt")
 
 [node name="Label" type="Label" parent="Panel2"]
 layout_mode = 0
@@ -55,6 +58,7 @@ offset_left = 94.0
 offset_top = 131.0
 offset_right = 198.0
 offset_bottom = 160.0
+theme = ExtResource("2_s68wt")
 
 [node name="Label" type="Label" parent="Panel3"]
 layout_mode = 0

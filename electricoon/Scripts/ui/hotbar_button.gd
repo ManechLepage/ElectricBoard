@@ -21,7 +21,8 @@ func _input(event: InputEvent) -> void:
 	for key in keys:
 		if Input.is_key_pressed(key):
 			for comp in _get_component_with_hotkey(keys.find(key)):
-				if button.get_parent().get_parent().visible == true:
+				if button.get_parent().get_parent().visible == true and component == comp:
+					print(button.get_parent().get_parent().visible)
 					Game.current_selected_component = comp
 					
 		
@@ -31,4 +32,5 @@ func _get_component_with_hotkey(wanted_hotkey):
 		for component in Game.components:
 			if component.hotkey == wanted_hotkey:
 				list_components.append(component)
+				print(component.hotkey)
 	return(list_components)

@@ -45,6 +45,8 @@ func _input(event: InputEvent) -> void:
 
 		if Input.is_action_just_pressed("RightClick"):
 			erase_component.emit(grid_manager.get_mouse_grid_position())
+		if Input.is_action_just_pressed("Escape"):
+			current_selected_component = null
 	
 func _on_grid_changed() -> void:
 	if is_grille:

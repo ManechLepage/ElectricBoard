@@ -9,7 +9,6 @@ func _input(event: InputEvent) -> void:
 
 func conduct(source: Source) -> void:
 	var components: Array
-	print("Allo")
 	var next: Component = Game.grid_manager.get_component_from_position(source.get_positive_position())
 	var list: Array[Array] = next.conduct_current([], source)
 	print(list)

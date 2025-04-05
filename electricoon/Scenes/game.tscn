@@ -1,32 +1,14 @@
-[gd_scene load_steps=11 format=3 uid="uid://yhlguoy7d5e5"]
+[gd_scene load_steps=6 format=3 uid="uid://yhlguoy7d5e5"]
 
 [ext_resource type="Script" uid="uid://baklgq5hsc2q1" path="res://Scripts/game_manager.gd" id="1_ebmjs"]
 [ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="2_3dryh"]
 [ext_resource type="Resource" uid="uid://cappxxat8h1p7" path="res://Resources/battery.tres" id="3_3dryh"]
 [ext_resource type="Resource" uid="uid://ccyj1j8ay0683" path="res://Resources/wire.tres" id="4_wowpa"]
-[ext_resource type="Resource" path="res://Resources/amperer.tres" id="5_i6g32"]
-[ext_resource type="Script" uid="uid://cj22jcm657iq5" path="res://Scripts/Components/conductor.gd" id="5_v158k"]
 [ext_resource type="Script" uid="uid://du8c5heeddhsk" path="res://Scenes/electricity_manager.gd" id="5_wowpa"]
-[ext_resource type="Resource" path="res://Resources/dsf.tres" id="6_1l0tm"]
-[ext_resource type="Texture2D" uid="uid://c1pegrnybwvgx" path="res://Graphics/battery_sprite.aseprite" id="6_h4fw4"]
-
-[sub_resource type="Resource" id="Resource_ldgsr"]
-script = ExtResource("5_v158k")
-connections = Array[bool]([false, false, false, false])
-current = 0.0
-resistance = 0.0
-connected_conductors = Array[ExtResource("2_3dryh")]([])
-name = &"Battery"
-hotkey = 2
-tab_num = 1
-price = 10
-sprite_atlas_coord = Vector2i(0, 9)
-sprite = ExtResource("6_h4fw4")
-metadata/_custom_type_script = "uid://cj22jcm657iq5"
 
 [node name="GameManager" type="Node"]
 script = ExtResource("1_ebmjs")
-components = Array[ExtResource("2_3dryh")]([ExtResource("5_i6g32"), ExtResource("4_wowpa"), SubResource("Resource_ldgsr"), ExtResource("6_1l0tm"), ExtResource("3_3dryh")])
+components = Array[ExtResource("2_3dryh")]([ExtResource("4_wowpa"), ExtResource("3_3dryh")])
 
 [node name="ElectricityManager" type="Node" parent="."]
 script = ExtResource("5_wowpa")

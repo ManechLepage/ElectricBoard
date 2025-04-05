@@ -6,7 +6,7 @@ extends Node2D
 @onready var overlay: TileMapLayer = $Overlay
 @onready var component_overlay: TileMapLayer = $ComponentOverlay
 
-@onready var info_panel: Control = $"../CanvasLayer/InfoPanel"
+@onready var info_panel: Control = %InfoPanel
 
 var components: Array[Component]
 

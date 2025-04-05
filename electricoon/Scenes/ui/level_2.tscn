@@ -3,15 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://bfqyeo4etmv4s" path="res://Graphics/ui/level2_tutorial.aseprite" id="1_0y0br"]
 
 [node name="Control" type="TextureRect"]
-anchors_preset = -1
-anchor_left = -0.483
-anchor_top = -0.461
-anchor_right = 0.517
-anchor_bottom = 0.539
-offset_left = 0.416016
-offset_top = -0.271973
-offset_right = 0.415955
-offset_bottom = -0.272034
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_0y0br")

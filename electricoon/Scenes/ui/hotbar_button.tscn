@@ -22,7 +22,6 @@ offset_top = 2.0
 offset_right = 55.0
 offset_bottom = 34.0
 scale = Vector2(1.675, 1.675)
-texture = ExtResource("1_0b5m0")
 
 [node name="cost" type="Label" parent="."]
 layout_mode = 0

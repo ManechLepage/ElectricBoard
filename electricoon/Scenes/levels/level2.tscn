@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3qwq8scmmd4r"]
+
+[ext_resource type="PackedScene" uid="uid://c5urw2axvh48g" path="res://Scenes/main.tscn" id="1_e0h1l"]
+[ext_resource type="PackedScene" uid="uid://d0b480tfq0t0j" path="res://Scenes/ui/level_2.tscn" id="2_q0wn2"]
+
+[node name="Main" instance=ExtResource("1_e0h1l")]
+
+[node name="CanvasLayer_Container_Start#Control" parent="." index="0" instance=ExtResource("2_q0wn2")]
+
+[node name="Control" parent="CanvasLayer/Start" index="0" instance=ExtResource("2_q0wn2")]
+layout_mode = 1

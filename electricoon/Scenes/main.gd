@@ -5,18 +5,21 @@ extends Node2D
 @export_multiline var description: String
 @export var budget: int = 0
 @onready var hotbar: Node2D = $CanvasLayer/hotbar
-@onready var label: Label = $Label
+@onready var label: Label = %Label
 @onready var panel: Panel = $Panel
 
-@onready var button: Button = $Button
-@onready var blueprint: TextureRect = $TextureRect
+@onready var button: Button = %Button
+@onready var blueprint: Control = %Start
 @onready var short_sprite: Sprite2D = $Sprite2D
-@onready var color_rect: ColorRect = $CanvasLayer/ColorRect
+@onready var color_rect: ColorRect = %ColorRect
 
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	call_deferred("load_level")
+
+func load_level() -> void:
 	short_sprite.modulate.a = 0.0
 	color_rect.modulate.a = 0.0
 	Game.short_circuit.connect(short_circuit)

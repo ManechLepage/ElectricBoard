@@ -6,10 +6,9 @@
 
 [resource]
 script = ExtResource("2_kw4ut")
-volts = 0.0
-power = 0.0
+power = 10.0
+volts = 10.0
 connections = Array[bool]([false, false, false, false])
-current = 0.0
 resistance = 0.0
 connected_conductors = Array[ExtResource("1_wbhpo")]([])
 name = &"Battery"
@@ -17,5 +16,6 @@ hotkey = 1
 tab_num = 1
 price = 10
 sprite_atlas_coord = Vector2i(0, 9)
+description = ""
 sprite = ExtResource("3_wbhpo")
 metadata/_custom_type_script = "uid://gxspmwtxx3ij"

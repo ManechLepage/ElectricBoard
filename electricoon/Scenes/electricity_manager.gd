@@ -13,6 +13,10 @@ func _input(event: InputEvent) -> void:
 		var _source: Source = Game.grid_manager.get_source()
 		if _source:
 			calculate_current(conduct(_source), source.volts, source.power/source.volts)
+			for conductor: Conductor in Game.grid_manager.components:
+				if conductor is Consumer:
+					var consumer: Consumer = conductor
+					print(consumer.name, ": ", consumer.is_activated)
 
 func conduct(_source: Source) -> Array:
 	source = _source

@@ -12,13 +12,7 @@
 [node name="Main" instance=ExtResource("1_0oj8u")]
 components = Array[ExtResource("2_vbbgi")]([ExtResource("3_332hv"), ExtResource("4_yghbx"), ExtResource("5_u1jx0"), ExtResource("6_hlh03"), ExtResource("7_vsx7g")])
 
-[node name="InfoPanel" parent="CanvasLayer" index="1"]
-unique_name_in_owner = true
-
-[node name="ColorRect" parent="CanvasLayer" index="2"]
-unique_name_in_owner = true
-
-[node name="Start" type="Control" parent="CanvasLayer" index="3"]
+[node name="Start2" type="Control" parent="CanvasLayer" index="3"]
 unique_name_in_owner = true
 layout_mode = 3
 anchors_preset = 15
@@ -27,7 +21,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="CanvasLayer" index="4"]
+[node name="Button2" type="Button" parent="CanvasLayer" index="4"]
 unique_name_in_owner = true
 offset_left = 972.0
 offset_top = 574.0
@@ -35,12 +29,10 @@ offset_right = 1145.0
 offset_bottom = 642.0
 theme = ExtResource("8_u2m23")
 
-[node name="Label" type="Label" parent="CanvasLayer" index="5"]
+[node name="Label2" type="Label" parent="CanvasLayer" index="5"]
 unique_name_in_owner = true
 offset_left = 5.0
 offset_top = 5.0
 offset_right = 144.0
 offset_bottom = 161.0
 theme_override_font_sizes/font_size = 32
-
-[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

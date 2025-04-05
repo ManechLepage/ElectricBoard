@@ -112,3 +112,10 @@ func highlight(component: Conductor) -> void:
 		else:
 			_component.is_hovered = true
 	Game.grid_changed.emit()
+
+func get_component_amount(comp: Component):
+	var x = 0
+	for component in components:
+		if component.name == comp.name:
+			x += 1
+	return x

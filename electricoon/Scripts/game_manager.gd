@@ -10,13 +10,15 @@ signal grid_changed
 enum SelectionType {
 	DEFAULT
 }
-
+var main = preload("res://Scenes/main.tscn")
 var grid_manager: GridManager
 var selection_type: SelectionType = SelectionType.DEFAULT
 
 var current_selected_component: Component
 
 func _ready() -> void:
+	var main_inst = main.instantiate()
+	components = main_inst.get_components()
 	grid_manager = get_tree().get_first_node_in_group("Grid")
 
 func _process(delta: float) -> void:

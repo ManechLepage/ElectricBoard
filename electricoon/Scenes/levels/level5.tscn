@@ -1,5 +1,46 @@
-[gd_scene load_steps=2 format=3 uid="uid://ccio50g0wbmsd"]
+[gd_scene load_steps=9 format=3 uid="uid://ccio50g0wbmsd"]
 
 [ext_resource type="PackedScene" uid="uid://c5urw2axvh48g" path="res://Scenes/main.tscn" id="1_0oj8u"]
+[ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="2_vbbgi"]
+[ext_resource type="Resource" uid="uid://b1lor4s6n7p1x" path="res://Resources/Level1/wirelvl1.tres" id="3_332hv"]
+[ext_resource type="Resource" uid="uid://cappxxat8h1p7" path="res://Resources/battery.tres" id="4_yghbx"]
+[ext_resource type="Resource" uid="uid://b2ggilln17t2c" path="res://Resources/bulb.tres" id="5_u1jx0"]
+[ext_resource type="Resource" uid="uid://clirxh2kbp4vd" path="res://Resources/Level1/copper_wire.tres" id="6_hlh03"]
+[ext_resource type="Resource" uid="uid://pcfi02gji4j6" path="res://Resources/Level1/silver.tres" id="7_vsx7g"]
+[ext_resource type="Theme" uid="uid://dhd8uh8sr0fcm" path="res://Scenes/ui/start_button.tres" id="8_u2m23"]
 
 [node name="Main" instance=ExtResource("1_0oj8u")]
+components = Array[ExtResource("2_vbbgi")]([ExtResource("3_332hv"), ExtResource("4_yghbx"), ExtResource("5_u1jx0"), ExtResource("6_hlh03"), ExtResource("7_vsx7g")])
+
+[node name="InfoPanel" parent="CanvasLayer" index="1"]
+unique_name_in_owner = true
+
+[node name="ColorRect" parent="CanvasLayer" index="2"]
+unique_name_in_owner = true
+
+[node name="Start" type="Control" parent="CanvasLayer" index="3"]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="CanvasLayer" index="4"]
+unique_name_in_owner = true
+offset_left = 972.0
+offset_top = 574.0
+offset_right = 1145.0
+offset_bottom = 642.0
+theme = ExtResource("8_u2m23")
+
+[node name="Label" type="Label" parent="CanvasLayer" index="5"]
+unique_name_in_owner = true
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 144.0
+offset_bottom = 161.0
+theme_override_font_sizes/font_size = 32
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

@@ -3,7 +3,8 @@ extends Component
 
 @export var connections: Array[bool] = [false, false, false, false] #Up-Left-Down-Right
 
-@export var current: float
+var current: float
+
 @export var resistance: float
 
 @export var connected_conductors: Array[Component]
@@ -76,17 +77,3 @@ func update_connected_components() -> void:
 		var component: Component = Game.grid_manager.get_component_from_position(tile)
 		if component:
 			connected_conductors.append(component)
-
-func conduct_current(previous_components: Array[Conductor], p: Conductor):
-	previous_components.append(self)
-	print(position, connected_conductors.size() - 1)
-	for conductor: Conductor in connected_conductors:
-		print("*", position, "*")
-		if conductor != p:
-			if conductor in previous_components:
-				previous_components.append(conductor)
-				Game.electricity_manager.paths.append(previous_components.duplicate(true))
-			else:
-				conductor.conduct_current(previous_components, self)
-	
-		#Game.electricity_manager.finished.emit()

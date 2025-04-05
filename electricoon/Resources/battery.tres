@@ -1,14 +1,16 @@
-[gd_resource type="Resource" script_class="Conductor" load_steps=2 format=3 uid="uid://d3ou400g10duq"]
+[gd_resource type="Resource" script_class="Conductor" load_steps=3 format=3 uid="uid://d3ou400g10duq"]
 
 [ext_resource type="Script" uid="uid://cj22jcm657iq5" path="res://Scripts/Components/conductor.gd" id="1_dc81i"]
+[ext_resource type="Texture2D" uid="uid://c1pegrnybwvgx" path="res://Graphics/battery_sprite.aseprite" id="2_kw4ut"]
 
 [resource]
 script = ExtResource("1_dc81i")
 connections = Array[bool]([false, false, false, false])
 current = 0.0
 name = &"Battery"
-hotkey = 0
+hotkey = 2
 tab_num = 0
 price = 10
 sprite_atlas_coord = Vector2i(0, 9)
+sprite = ExtResource("2_kw4ut")
 metadata/_custom_type_script = "uid://cj22jcm657iq5"

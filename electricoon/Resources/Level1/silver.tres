@@ -7,7 +7,7 @@
 [resource]
 script = ExtResource("2_ytesh")
 connections = Array[bool]([false, false, false, false])
-resistance = 0.0
+resistance = 0.5
 connected_conductors = Array[ExtResource("1_t2yv2")]([])
 name = &"Silver Wire"
 hotkey = 3

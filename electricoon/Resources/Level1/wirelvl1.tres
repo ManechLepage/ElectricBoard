@@ -7,7 +7,7 @@
 [resource]
 script = ExtResource("2_i85en")
 connections = Array[bool]([])
-resistance = 0.0
+resistance = 2.8
 connected_conductors = Array[ExtResource("1_3oevy")]([])
 name = &"Wire"
 hotkey = 1

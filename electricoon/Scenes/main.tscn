@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://c5urw2axvh48g"]
+[gd_scene load_steps=11 format=4 uid="uid://c5urw2axvh48g"]
 
 [ext_resource type="Script" uid="uid://cemcu7sqkm7mi" path="res://Scripts/tile_map_manager.gd" id="1_jjgbg"]
 [ext_resource type="Script" uid="uid://by5lf0t8ol570" path="res://Scenes/main.gd" id="1_jjvhh"]
@@ -7,7 +7,8 @@
 [ext_resource type="Resource" uid="uid://ccyj1j8ay0683" path="res://Resources/wire.tres" id="3_6bp64"]
 [ext_resource type="Resource" uid="uid://cappxxat8h1p7" path="res://Resources/battery.tres" id="4_344ge"]
 [ext_resource type="PackedScene" uid="uid://dybwpq4lal6sj" path="res://Scenes/ui/hotbar.tscn" id="4_jjvhh"]
-[ext_resource type="Theme" uid="uid://c12t6p161353e" path="res://Scenes/ui/start_button.tres" id="8_344ge"]
+[ext_resource type="Resource" uid="uid://b2ggilln17t2c" path="res://Resources/bulb.tres" id="5_ynf5e"]
+[ext_resource type="Theme" uid="uid://dhd8uh8sr0fcm" path="res://Scenes/ui/start_button.tres" id="8_344ge"]
 
 [sub_resource type="Environment" id="Environment_8gbba"]
 glow_enabled = true
@@ -17,7 +18,7 @@ fog_density = 0.0
 [node name="Main" type="Node2D"]
 texture_filter = 1
 script = ExtResource("1_jjvhh")
-components = Array[ExtResource("2_21xkr")]([ExtResource("3_6bp64"), ExtResource("4_344ge")])
+components = Array[ExtResource("2_21xkr")]([ExtResource("3_6bp64"), ExtResource("4_344ge"), ExtResource("5_ynf5e")])
 
 [node name="TileMap" type="Node2D" parent="." groups=["Grid"]]
 script = ExtResource("1_jjgbg")

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="1_3oevy"]
 [ext_resource type="Script" uid="uid://cj22jcm657iq5" path="res://Scripts/Components/conductor.gd" id="2_i85en"]
-[ext_resource type="Texture2D" uid="uid://dmacu7tmkysug" path="res://Graphics/wire_sprite.aseprite" id="3_aqaqr"]
+[ext_resource type="Texture2D" uid="uid://cfv6ms01ac3s4" path="res://Graphics/aluminium.aseprite" id="3_oyy7k"]
 
 [resource]
 script = ExtResource("2_i85en")
@@ -18,5 +18,5 @@ description = "This is a wire. It lets you connect components to sources of ener
 You can connect multiple together increasing its utility… 
 But at what cost?
 "
-sprite = ExtResource("3_aqaqr")
+sprite = ExtResource("3_oyy7k")
 metadata/_custom_type_script = "uid://cj22jcm657iq5"

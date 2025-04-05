@@ -1,13 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://5iv1qn41gnq7"]
+[gd_scene load_steps=3 format=3 uid="uid://5iv1qn41gnq7"]
 
 [ext_resource type="Script" uid="uid://bo174bmamiihp" path="res://Scripts/ui/hotbar_button.gd" id="1_hwxm4"]
 [ext_resource type="Texture2D" uid="uid://qqja0rkmpagf" path="res://Graphics/money.aseprite" id="2_wia8r"]
-[ext_resource type="Texture2D" uid="uid://gaxlwlxo1jc6" path="res://Graphics/info_button.aseprite" id="3_bmweg"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bmweg"]
-
-[sub_resource type="Theme" id="Theme_gnilw"]
-Button/styles/focus = SubResource("StyleBoxEmpty_bmweg")
 
 [node name="Control" type="Button"]
 custom_minimum_size = Vector2(80, 0)
@@ -57,14 +51,4 @@ offset_bottom = 22.0
 scale = Vector2(1.655, 1.655)
 text = "1"
 
-[node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = -1.0
-offset_top = 57.0
-offset_right = 23.0
-offset_bottom = 81.0
-theme = SubResource("Theme_gnilw")
-icon = ExtResource("3_bmweg")
-
 [connection signal="pressed" from="." to="." method="_on_pressed"]
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -25,7 +25,7 @@ func is_short_circuit(paths: Array) -> bool:
 		for conductor: Conductor in path:
 			if conductor is Consumer:
 				return false
-	return paths.size() > 1
+	return paths.size() > 0
 
 func conduct(_source: Source) -> Array:
 	source = _source

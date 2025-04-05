@@ -7,8 +7,9 @@ extends Node2D
 @onready var hotbar: Node2D = $CanvasLayer/hotbar
 @onready var label: Label = $Label
 @onready var panel: Panel = $Panel
-@onready var blueprint: TextureRect = $TextureRect
+
 @onready var button: Button = $Button
+@onready var blueprint: TextureRect = $TextureRect
 
 
 

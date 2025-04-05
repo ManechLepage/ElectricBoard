@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://cquc5rojvfwkf"
+path="res://.godot/imported/circuit_board.aseprite-75561d49abdb6f7f2bfea761a8c444f2.res"
+
+[deps]
+
+source_file="res://Graphics/circuit_board.aseprite"
+dest_files=["res://.godot/imported/circuit_board.aseprite-75561d49abdb6f7f2bfea761a8c444f2.res"]
+
+[params]
+

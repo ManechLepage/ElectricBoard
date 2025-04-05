@@ -24,7 +24,9 @@ func reset_overlay() -> void:
 		overlay.erase_cell(tile)
 	for tile in component_overlay.get_used_cells():
 		component_overlay.erase_cell(tile)
-
+func _process(delta: float) -> void:
+	var component: Component = get_component_from_position(get_mouse_grid_position())
+	highlight(component)
 func draw_selection() -> void:
 	reset_overlay()
 	
@@ -97,5 +99,14 @@ func handle_hover() -> void:
 	if component:
 		info_panel.visible = true
 		info_panel.load_component(component)
+		highlight(component)
 	else:
 		info_panel.visible = false
+
+func highlight(component: Conductor) -> void:
+	for _component: Conductor in components:
+		if _component != component:
+			_component.is_hovered = false
+		else:
+			_component.is_hovered = true
+	Game.grid_changed.emit()

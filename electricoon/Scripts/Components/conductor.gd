@@ -8,6 +8,7 @@ var current: float
 @export var resistance: float
 
 @export var connected_conductors: Array[Component]
+var is_hovered: bool = false
 
 func update_connections(new_connections: Array[bool]) -> Vector2i:
 	connections = new_connections
@@ -69,7 +70,11 @@ func update_connections(new_connections: Array[bool]) -> Vector2i:
 	
 	update_connected_components()
 	
-	return sprite_atlas_coord + offset
+	var hovered_offset: Vector2i
+	if is_hovered:
+		hovered_offset = Vector2i(0, 3)
+	
+	return sprite_atlas_coord + offset + hovered_offset
 
 func update_connected_components() -> void:
 	connected_conductors.clear()

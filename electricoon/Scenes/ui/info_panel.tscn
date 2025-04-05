@@ -1,0 +1,70 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2uq1687o00b"]
+
+[ext_resource type="Theme" uid="uid://b28rb17yk0pqt" path="res://Scenes/ui/panels.tres" id="1_5feb8"]
+[ext_resource type="Script" uid="uid://d2pyurwkoaey" path="res://Scripts/ui/info_panel.gd" id="1_dvdl8"]
+[ext_resource type="Texture2D" uid="uid://bbww6j66bavar" path="res://Addons/nklbdev.aseprite_importers/icon.png" id="2_45a6i"]
+
+[node name="InfoPanel" type="Control"]
+layout_mode = 3
+anchor_right = 0.209
+anchor_bottom = 0.483
+offset_right = 0.231995
+offset_bottom = 0.0159912
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dvdl8")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_5feb8")
+
+[node name="Name" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 33.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Panel"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 142.0
+offset_right = 237.0
+offset_bottom = 309.0
+color = Color(0.0846899, 0.0846899, 0.0846899, 1)
+
+[node name="Description" type="Label" parent="Panel/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -120.0
+offset_right = 50.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_45a6i")
+expand_mode = 1

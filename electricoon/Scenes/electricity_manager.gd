@@ -12,7 +12,7 @@ func _input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("Test3"):
 		var _source: Source = Game.grid_manager.get_source()
 		if _source:
-			calculate_current(conduct(_source))
+			calculate_current(conduct(_source), source.volts, source.power/source.volts)
 
 func conduct(_source: Source) -> Array:
 	source = _source
@@ -45,24 +45,98 @@ func dfs(current_conductor: Conductor) -> void:
 	if current_conductor != source:
 		visited_paths.erase(current_conductor)
 
-func calculate_current(valid_paths: Array) -> void:
+func calculate_current(valid_paths: Array, voltage: float, current: float) -> void:
 	if valid_paths.size() == 1:
-		set_current(source.power/source.volts, valid_paths[0])
-		var resistance: float = get_total_resistance(valid_paths[0])
-		var consumers: Array[Consumer]
-		for conductor: Conductor in valid_paths[0]:
-			if conductor is Consumer:
-				var consumer = conductor as Consumer
-				consumers.append(consumer)
-		var total_volts = source.volts
+		calculate_single_path(valid_paths, voltage, current)
+	elif valid_paths.size() > 1:
+		calculate_multiple_paths(valid_paths, voltage, current)
+
+func calculate_single_path(valid_paths: Array, voltage: float, current: float) -> void:
+	set_current(current, valid_paths[0])
+	var resistance: float = get_total_resistance(valid_paths[0])
+	var consumers: Array[Consumer] = get_consumers(valid_paths[0])
+	var total_volts = source.volts
+	for consumer: Consumer in consumers:
+		total_volts -= consumer.volts
+	if total_volts > 0:
 		for consumer: Consumer in consumers:
-			total_volts -= consumer.volts
-		if total_volts > 0:
-			for consumer: Consumer in consumers:
-				consumer.is_activated = true
-		else:
-			for consumer: Consumer in consumers:
-				consumer.is_activated = false
+			consumer.is_activated = true
+	else:
+		for consumer: Consumer in consumers:
+			consumer.is_activated = false
+
+func calculate_multiple_paths(valid_paths: Array, voltage: float, current: float) -> void:
+	var resistance: float = calculate_total_resistance(valid_paths)
+	var common_path: Array[Conductor] = get_common_paths(valid_paths)
+	
+	var new_voltage = voltage
+	for consumer: Consumer in get_consumers(common_path):
+		new_voltage -= consumer.volts
+	
+	for path in paths:
+		for conductor: Conductor in path:
+			if conductor in common_path:
+				path.erase(conductor)
+	
+	var path_groups = get_path_groups(paths)
+	for path_group in path_groups:
+		calculate_current(path_group, new_voltage, new_voltage/resistance)
+
+func get_path_groups(paths_without_common: Array) -> Array:
+	var path_groups: Array
+	for path in paths:
+		var is_not_sorted: bool = true
+		for path_group in path_groups:
+			if path in path_group:
+				is_not_sorted = false
+		if is_not_sorted:
+			var common: Array = [path]
+			for compared_path in paths:
+				if get_common_paths([compared_path,path]).size() != 0:
+					common.append(compared_path)
+			path_groups.append(common)
+	return path_groups
+
+func calculate_total_resistance(paths: Array) -> float:
+	var total_resistance: float
+	if paths.size() == 1:
+		for consumer: Consumer in get_consumers(paths[0]):
+			total_resistance += consumer.resistance
+		return total_resistance
+	var common_path = get_common_paths(paths)
+	total_resistance += calculate_total_resistance([common_path])
+	
+	for path in paths:
+		for conductor: Conductor in path:
+			if conductor in common_path:
+				path.erase(conductor)
+	
+	var path_groups: Array = get_path_groups(paths)
+	var resistance_in_path_groups: float
+	for path_group in path_groups:
+		resistance_in_path_groups += 1/calculate_total_resistance(path_group)
+	
+	total_resistance += 1/resistance_in_path_groups
+	
+	return total_resistance
+
+func get_common_paths(paths: Array) -> Array[Conductor]:
+	var path_lengths: Array[int]
+	var common_path = []
+	for path in paths:
+		for conductor in path:
+			for pathos in paths:
+				if conductor in paths:
+					common_path.append(conductor)
+	return common_path
+	
+
+func get_consumers(conductors: Array[Conductor]) -> Array[Consumer]:
+	var consumers: Array[Consumer]
+	for conductor in conductors:
+		if conductor is Consumer:
+			consumers.append(conductor as Consumer)
+	return consumers
 
 func set_current(current: float, conductors: Array[Conductor]) -> void:
 	for component: Conductor in conductors:

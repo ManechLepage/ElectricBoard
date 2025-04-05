@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Consumer" load_steps=3 format=3 uid="uid://b2ggilln17t2c"]
+
+[ext_resource type="Script" uid="uid://c4s8mkbc2qmbp" path="res://Scripts/Components/component.gd" id="1_l5dd0"]
+[ext_resource type="Script" uid="uid://dnet58r4xungu" path="res://Scripts/Components/consumer.gd" id="2_qqyck"]
+
+[resource]
+script = ExtResource("2_qqyck")
+volts = 0.0
+connections = Array[bool]([false, false, false, false])
+resistance = 0.0
+connected_conductors = Array[ExtResource("1_l5dd0")]([])
+name = &""
+hotkey = 0
+tab_num = 0
+price = 0
+sprite_atlas_coord = Vector2i(0, 0)
+metadata/_custom_type_script = "uid://dnet58r4xungu"

@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cb0bjjsx1k7yg"]
+[gd_scene load_steps=7 format=3 uid="uid://cb0bjjsx1k7yg"]
 
 [ext_resource type="Script" uid="uid://buehm7botpuif" path="res://Scenes/ui/menu_select.gd" id="1_wr8qp"]
 [ext_resource type="PackedScene" uid="uid://b4vs8vj5si25" path="res://Scenes/ui/level.tscn" id="2_5afff"]
 [ext_resource type="Texture2D" uid="uid://4y43ncoakv8x" path="res://Graphics/menu_line.aseprite" id="3_5afff"]
+[ext_resource type="PackedScene" uid="uid://bq055ta2pcnk2" path="res://Scenes/ui/level_1.tscn" id="4_jdm3d"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jdm3d"]
 bg_color = Color(0.467945, 0.677018, 0, 1)
@@ -32,41 +33,46 @@ texture = ExtResource("3_5afff")
 [node name="level" parent="." instance=ExtResource("2_5afff")]
 layout_mode = 0
 offset_left = 106.0
-offset_top = 1244.0
+offset_top = 1229.0
 offset_right = 226.0
-offset_bottom = 1364.0
+offset_bottom = 1349.0
+level_path = ExtResource("4_jdm3d")
 
 [node name="level2" parent="." instance=ExtResource("2_5afff")]
 layout_mode = 0
 offset_left = 317.0
-offset_top = 1247.0
+offset_top = 1232.0
 offset_right = 437.0
-offset_bottom = 1367.0
+offset_bottom = 1352.0
 text = "2"
+level_path = ExtResource("4_jdm3d")
 
 [node name="level3" parent="." instance=ExtResource("2_5afff")]
 layout_mode = 0
 offset_left = 530.0
-offset_top = 1247.0
+offset_top = 1232.0
 offset_right = 650.0
-offset_bottom = 1367.0
+offset_bottom = 1352.0
 text = "3"
+level_path = ExtResource("4_jdm3d")
 
 [node name="level4" parent="." instance=ExtResource("2_5afff")]
 layout_mode = 0
 offset_left = 744.0
-offset_top = 1246.0
+offset_top = 1231.0
 offset_right = 864.0
-offset_bottom = 1366.0
+offset_bottom = 1351.0
 text = "4"
+level_path = ExtResource("4_jdm3d")
 
 [node name="level5" parent="." instance=ExtResource("2_5afff")]
 layout_mode = 0
 offset_left = 934.0
-offset_top = 1249.0
+offset_top = 1234.0
 offset_right = 1054.0
-offset_bottom = 1369.0
+offset_bottom = 1354.0
 text = "5"
+level_path = ExtResource("4_jdm3d")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 327)

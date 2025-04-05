@@ -6,6 +6,7 @@ extends Resource
 @export var tab_num: int
 @export var price: int
 @export var sprite_atlas_coord: Vector2i
+@export_multiline var description: String
 
 @export var sprite: Texture2D
 

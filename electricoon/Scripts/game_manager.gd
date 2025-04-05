@@ -20,6 +20,10 @@ func _ready() -> void:
 	grid_manager = get_tree().get_first_node_in_group("Grid")
 
 func _process(delta: float) -> void:
+	if current_selected_component:
+		print(current_selected_component.name)
+	else:
+		print("none")
 	if selection_type == SelectionType.DEFAULT:
 		if grid_manager:
 			grid_manager.draw_selection()

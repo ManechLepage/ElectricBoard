@@ -10,9 +10,10 @@ offset_left = 35.0
 offset_top = 488.0
 offset_right = 1096.0
 offset_bottom = 605.0
-current_tab = 0
+current_tab = 1
 
 [node name="Q Wires" type="TabBar" parent="TabContainer"]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -22,7 +23,6 @@ offset_right = 1061.0
 offset_bottom = 86.0
 
 [node name="W Source" type="TabBar" parent="TabContainer"]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 

@@ -46,6 +46,7 @@ environment = SubResource("Environment_8gbba")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="hotbar" parent="CanvasLayer" instance=ExtResource("4_jjvhh")]
+visible = false
 
 [node name="Label" type="Label" parent="."]
 offset_left = -176.0

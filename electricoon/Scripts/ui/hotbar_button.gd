@@ -11,7 +11,7 @@ var component: Component
 func load_component(_component: Component) -> void:
 	component = _component
 	comp_sprite.texture = component.sprite
-	if component.price == 0 and if component.hotkey == 0:
+	if component.price == 0 and component.hotkey == 0:
 		cost_l.text = str(component.price)
 		hotkey_l.text = str(component.hotkey)
 	else:

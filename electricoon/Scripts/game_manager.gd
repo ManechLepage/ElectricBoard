@@ -41,4 +41,6 @@ func _input(event: InputEvent) -> void:
 		erase_component.emit(grid_manager.get_mouse_grid_position())
 	
 func _on_grid_changed() -> void:
-	money_spent += current_selected_component.price
+	money_spent = 0
+	for component in grid_manager.components:
+		money_spent += component.price
